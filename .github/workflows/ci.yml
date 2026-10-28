@@ -1,0 +1,25 @@
+# PR doğrulaması: JSON dosyaları + sayfalardaki yerel bağlantılar (_build/dogrula.js).
+#
+# Yalnız PR'da çalışıyor, her push'ta değil: oto-push her Claude cevabından
+# sonra push ediyor, her birinde denetim koşmak Actions dakikalarını boşa harcar.
+name: Doğrulama
+
+on:
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  dogrula:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node _build/dogrula.js
