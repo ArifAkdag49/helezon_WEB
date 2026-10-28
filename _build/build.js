@@ -2,17 +2,20 @@
    Reads _build/raw/all-posts.json (WordPress REST export of helezondergisi.com)
    and writes yazi/, yazar/, tur/, sayi/, arsiv/, yazilar/, yazarlar/, data/, sitemap.xml
    Run:  node _build/build.js            (from the helezon/ folder)
+   Uygulama kaynağıyla: node _build/kaynak-uygulama.js (dışa aktarımı indirir, HELEZON_RAW ile bunu çalıştırır)
 */
 const fs = require('fs');
 const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
-const RAW = path.join(__dirname, 'raw');
+const RAW = process.env.HELEZON_RAW || path.join(__dirname, 'raw');
 const SITE = 'https://helezon.vercel.app';
 const ORIGIN = 'https://helezondergisi.com/';
 
 const posts = JSON.parse(fs.readFileSync(path.join(RAW, 'all-posts.json'), 'utf8'));
 const catsRaw = JSON.parse(fs.readFileSync(path.join(RAW, 'categories.json'), 'utf8'));
 const users = JSON.parse(fs.readFileSync(path.join(RAW, 'users.json'), 'utf8'));
+/* uygulama kaynağı: sayıların yılı, ayı ve kapağı (WordPress dışa aktarımında yok; sayı tarihten hesaplanır) */
+const appIssue = {}; (fs.existsSync(path.join(RAW, 'issues.json')) ? JSON.parse(fs.readFileSync(path.join(RAW, 'issues.json'), 'utf8')) : []).forEach(i => appIssue[i.n] = i);
 
 /* ---------------- helpers ---------------- */
 const ENT = { amp:'&', lt:'<', gt:'>', quot:'"', apos:"'", nbsp:' ', hellip:'…', ndash:'–', mdash:'—', rsquo:'’', lsquo:'‘', rdquo:'”', ldquo:'“', uuml:'ü', ouml:'ö', ccedil:'ç', Uuml:'Ü', Ouml:'Ö', Ccedil:'Ç', icirc:'î', acirc:'â', Icirc:'Î', Acirc:'Â', ucirc:'û', laquo:'«', raquo:'»', copy:'©', bull:'•', aring:'å', Aring:'Å', oslash:'ø', Oslash:'Ø', aelig:'æ', AElig:'Æ', eacute:'é', Eacute:'É', egrave:'è', Egrave:'È', ecirc:'ê', euml:'ë', agrave:'à', aacute:'á', auml:'ä', Auml:'Ä', iacute:'í', igrave:'ì', iuml:'ï', oacute:'ó', ograve:'ò', otilde:'õ', uacute:'ú', ugrave:'ù', ntilde:'ñ', szlig:'ß', yacute:'ý', ccedil:'ç', Ccedil:'Ç', scaron:'š', zcaron:'ž', trade:'™', reg:'®', deg:'°', middot:'·', sbquo:'‚', bdquo:'„', prime:'′', lsaquo:'‹', rsaquo:'›', times:'×' };
@@ -138,12 +141,14 @@ posts.forEach(p => {
   const sizes = media && media.media_details && media.media_details.sizes || {};
   const img = media ? ((sizes.large || sizes.medium_large || sizes.full || {}).source_url || media.source_url) : null;
   const imgFull = media ? media.source_url : null;
-  const n = issueOf(p.date);
+  const hz = p.helezon; /* uygulama kaynağı: başlık, yazar, tür, sayı ve slug ayrık gelir */
+  const n = hz ? hz.n : issueOf(p.date);
   if (isAnnouncement){ announcements.push({ n, date: p.date, title: rawTitle, img, imgFull, link: p.link, text: cleanContent(p.content.rendered, false) }); return; }
-  let { title, author } = splitTitle(rawTitle, knownKeys);
+  let { title, author } = hz ? { title: hz.title, author: hz.author } : splitTitle(rawTitle, knownKeys);
   let interview = false, foreign = false;
   if (author && /^Röportaj:/i.test(author)){ interview = true; author = author.replace(/^Röportaj:\s*/i, ''); }
   if (author && /\*\s*$/.test(author)){ foreign = true; author = author.replace(/\*+\s*$/, ''); }
+  if (hz){ interview = hz.interview; foreign = hz.foreign; }
   if (isEditorial){ title = 'Editörden'; if (!author) author = 'Helezon'; }
   if (!author){
     /* art posts titled with the artist name only */
@@ -155,12 +160,13 @@ posts.forEach(p => {
   const genreSlugs = GENRE_ORDER.filter(g => catSlugs.includes(g));
   let primary = genreSlugs[0] || 'edebiyat';
   if (isEditorial) primary = 'editorden';
+  if (hz) primary = hz.genre;
   if (primary === 'ceviri' && genreSlugs.length > 1) primary = genreSlugs.find(g => g !== 'ceviri');
   const isPoem = primary === 'siir' || primary === 'gorsel-siir';
   const wpSlug = decodeURIComponent(p.link.replace(ORIGIN, '').replace(/\/$/, ''));
-  const slug = /^[a-z0-9-]+$/.test(wpSlug) ? wpSlug : ('p' + p.id + '-' + (slugifyKeep(title) || 'yazi').slice(0, 40));
+  const slug = hz ? hz.slug : /^[a-z0-9-]+$/.test(wpSlug) ? wpSlug : ('p' + p.id + '-' + (slugifyKeep(title) || 'yazi').slice(0, 40));
   const excerpt = stripTags(p.excerpt.rendered).replace(/\s*\[…\]\s*$/, '').replace(/\[&hellip;\]/g, '').slice(0, 260);
-  articles.push({ id: p.id, date: p.date, n, title, author, authorKey: fold(author), interview, foreign, isAfis, translation: catSlugs.includes('ceviri'), genre: primary, genres: isEditorial ? ['editorden'] : (genreSlugs.length ? genreSlugs : ['edebiyat']), img, imgFull, link: p.link, slug, url: `/yazi/${slug}/`, excerpt, content: cleanContent(p.content.rendered, isPoem), isPoem, isEditorial });
+  articles.push({ id: p.id, date: p.date, n, title, author, authorKey: fold(author), appRole: hz ? hz.role : null, interview, foreign, isAfis, translation: catSlugs.includes('ceviri'), genre: primary, genres: isEditorial ? ['editorden'] : (genreSlugs.length ? genreSlugs : ['edebiyat']), img, imgFull, link: p.link, slug, url: `/yazi/${slug}/`, excerpt, content: cleanContent(p.content.rendered, isPoem), isPoem, isEditorial });
 });
 articles.sort((a, b) => a.date < b.date ? 1 : a.date > b.date ? -1 : b.id - a.id);
 console.log('articles', articles.length, 'announcements', announcements.length);
@@ -172,7 +178,8 @@ const authors = Object.values(authorsMap).map(a => {
   const name = Object.entries(a.names).sort((x, y) => y[1] - x[1])[0][0];
   const u = userByKey[a.key];
   const slug = u ? u.slug : slugifyKeep(name) || a.key;
-  return { key: a.key, name, slug, role: u && ROLES[u.slug] ? ROLES[u.slug] : null, pieces: a.pieces, url: `/yazar/${slug}/` };
+  const appRole = (a.pieces.find(p => p.appRole) || {}).appRole || null;
+  return { key: a.key, name, slug, role: u && ROLES[u.slug] ? ROLES[u.slug] : appRole, pieces: a.pieces, url: `/yazar/${slug}/` };
 });
 const authorBySlug = {}; authors.forEach(a => { if (authorBySlug[a.slug]) { a.slug = a.slug + '-' + a.key.slice(0,4); a.url = `/yazar/${a.slug}/`; } authorBySlug[a.slug] = a; });
 const authorByKey = {}; authors.forEach(a => authorByKey[a.key] = a);
@@ -185,7 +192,7 @@ const issues = {};
 articles.forEach(a => { if (!issues[a.n]) issues[a.n] = { n: a.n, pieces: [], announcement: null }; issues[a.n].pieces.push(a); });
 announcements.forEach(an => { if (!issues[an.n]) issues[an.n] = { n: an.n, pieces: [], announcement: null }; if (!issues[an.n].announcement || an.img) issues[an.n].announcement = an; });
 const issueList = Object.values(issues).sort((a, b) => b.n - a.n);
-issueList.forEach(is => { const im = issueMonth(is.n); is.y = im.y; is.m = im.m; is.label = `${MONTHS_TR[is.m-1]} ${is.y}`; is.url = `/sayi/${is.n}/`; is.pieces.sort((a, b) => a.id - b.id); is.editorial = is.pieces.find(p => p.isEditorial) || null; is.cover = (is.announcement && is.announcement.img) || (is.editorial && is.editorial.isAfis && is.editorial.img) || null; });
+issueList.forEach(is => { const im = appIssue[is.n] || issueMonth(is.n); is.y = im.y; is.m = im.m; is.label = `${MONTHS_TR[is.m-1]} ${is.y}`; is.url = `/sayi/${is.n}/`; is.pieces.sort((a, b) => a.id - b.id); is.editorial = is.pieces.find(p => p.isEditorial) || null; is.cover = (is.announcement && is.announcement.img) || (is.editorial && is.editorial.isAfis && is.editorial.img) || (appIssue[is.n] && appIssue[is.n].cover) || null; });
 console.log('issues', issueList.length, 'with cover', issueList.filter(i => i.cover).length);
 
 /* genres */
@@ -200,7 +207,7 @@ const NAV = `
 <header class="nav solid" id="nav">
   <a href="/" class="wordmark" aria-label="Helezon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-1 0a1 1 0 1 0 2 0a2 2 0 1 1 -4 0a3 3 0 1 0 6 0a4 4 0 1 1 -8 0a5 5 0 1 0 10 0a6 6 0 1 1 -12 0a7 7 0 1 0 14 0a8 8 0 1 1 -16 0a9 9 0 1 0 18 0"/></svg>Helezon</a>
   <nav class="nav-links" aria-label="Main">
-    <a href="/sayi/59/" data-i18n="nav.latest">Son Sayı</a>
+    <a href="/sayi/${issueList[0].n}/" data-i18n="nav.latest">Son Sayı</a>
     <a href="/yazilar/" data-i18n="nav.pieces">Yazılar</a>
     <a href="/yazarlar/" data-i18n="nav.authors">Yazarlar</a>
     <a href="/arsiv/" data-i18n="nav.archive">Arşiv</a>
@@ -219,7 +226,7 @@ const NAV = `
 <div class="menu" id="menu" aria-hidden="true">
   <ul>
     <li><a href="/" data-i18n="nav.home">Ana Sayfa</a></li>
-    <li><a href="/sayi/59/" data-i18n="nav.latest">Son Sayı</a></li>
+    <li><a href="/sayi/${issueList[0].n}/" data-i18n="nav.latest">Son Sayı</a></li>
     <li><a href="/yazilar/" data-i18n="nav.pieces">Yazılar</a></li>
     <li><a href="/yazarlar/" data-i18n="nav.authors">Yazarlar</a></li>
     <li><a href="/arsiv/" data-i18n="nav.archive">Arşiv</a></li>

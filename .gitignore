@@ -14,3 +14,6 @@ __pycache__/
 node_modules/
 .DS_Store
 Thumbs.db
+
+# Uygulama dışa aktarımından üretilen build.js girdisi (node _build/kaynak-uygulama.js)
+_build/raw-uygulama/

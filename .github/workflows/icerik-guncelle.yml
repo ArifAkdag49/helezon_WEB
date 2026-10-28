@@ -1,0 +1,89 @@
+# Siteyi Helezon uygulamasından (tek kaynak) yeniden üretir; değişiklik varsa main'e
+# commit'ler ve Vercel'e yayınlar.
+#
+# Tetikler:
+#   - saatte bir (yakalama)
+#   - elle: Actions → İçeriği güncelle → Run workflow
+#   - anında: uygulama sayı yayımlayınca / medya onaylanınca repository_dispatch
+#     (event_type: icerik-guncellendi) gönderir
+#
+# Kaynak: vars.HELEZON_API (yoksa https://helezon.arxdigitalsevice.com) → /api/disa/site
+# Yayın adımı yalnız DEPLOY_ACIK=true iken (gerekenler deploy.yml'de yazılı). Bu iş
+# GITHUB_TOKEN ile push ettiği için "Canlıya çıkar" ikinci kez tetiklenmez; yayını burada yapar.
+name: İçeriği güncelle
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [icerik-guncellendi]
+
+concurrency:
+  group: icerik-guncelle
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  guncelle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      HELEZON_API: ${{ vars.HELEZON_API || 'https://helezon.arxdigitalsevice.com' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Uygulamadan üret
+        run: node _build/kaynak-uygulama.js
+
+      - name: Doğrula
+        run: node _build/dogrula.js
+
+      - name: Değişiklik var mı
+        id: fark
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "degisti=false" >> "$GITHUB_OUTPUT"
+            echo "Değişiklik yok."
+          else
+            echo "degisti=true" >> "$GITHUB_OUTPUT"
+            git diff --cached --stat | tail -1
+          fi
+
+      - name: Commit
+        if: steps.fark.outputs.degisti == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "İçerik güncellendi (uygulamadan)" -m "Tetik: ${{ github.event_name }} · ${{ github.run_id }}"
+          # bu arada main ilerlediyse üstüne al; üretilen dosyalarda çakışma olursa iş düşer, sonraki saat yeniden üretir
+          git push origin HEAD:main || { git pull --rebase origin main && git push origin HEAD:main; }
+
+      - name: Vercel'e yayınla
+        if: steps.fark.outputs.degisti == 'true' && vars.DEPLOY_ACIK == 'true'
+        env:
+          VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID }}
+        run: npx --yes vercel@latest deploy --prod --yes --token "${{ secrets.VERCEL_TOKEN }}"
+
+      - name: Canlı adres açılıyor mu
+        if: steps.fark.outputs.degisti == 'true' && vars.DEPLOY_ACIK == 'true'
+        run: |
+          for i in 1 2 3 4 5 6; do
+            kod=$(curl -s -o /dev/null -w '%{http_code}' "https://helezon.vercel.app/")
+            [ "$kod" = 200 ] && { echo "https://helezon.vercel.app → 200"; exit 0; }
+            sleep 10
+          done
+          echo "Canlı adres açılmadı (son kod: $kod)"; exit 1
+
+      - name: Yayın kapalı
+        if: steps.fark.outputs.degisti == 'true' && vars.DEPLOY_ACIK != 'true'
+        run: echo "::warning::İçerik main'e işlendi ama DEPLOY_ACIK=true değil; Vercel'e yayınlanmadı (deploy.yml başındaki kurulum)."

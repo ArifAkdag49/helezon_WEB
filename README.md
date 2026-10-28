@@ -2,8 +2,9 @@
 
 Helezon edebiyat, kültür ve sanat dergisinin yeni sitesi. Canlı: https://helezon.vercel.app
 
-Tamamen statik bir sitedir: tek bir `index.html` (7 dilli ana sayfa) ve
-helezondergisi.com'daki WordPress arşivinden üretilen yazı, yazar, tür ve sayı sayfaları.
+Tamamen statik bir sitedir: tek bir `index.html` (7 dilli ana sayfa) ve Helezon
+uygulamasından (https://helezon.arxdigitalsevice.com, tek kaynak) üretilen yazı, yazar, tür ve
+sayı sayfaları. Uygulama `/api/disa/site` adresinden herkese açık bir dışa aktarım verir.
 
 ## Klasörler
 
@@ -15,25 +16,24 @@ helezondergisi.com'daki WordPress arşivinden üretilen yazı, yazar, tür ve sa
 | `assets/audio/` | Radyo kayıtları (edge-tts ile seslendirilmiş) ve `radio.json`, `youtube.json` |
 | `yazi/`, `yazar/`, `tur/`, `sayi/`, `arsiv/`, `yazilar/`, `yazarlar/`, `tefrika/`, `hatira-defteri/`, `ayraclar/` | Üretilen sayfalar (elle düzenleme; `_build/build.js` yeniden yazar) |
 | `data/` | `pieces.json` (arama ve radyo için yazı dizini), `issues.json`, `hatira.json` (onaylı hatıra defteri notları) |
-| `_build/` | Derleme ve yama betikleri. `_build/raw/` (WordPress dışa aktarımı) git dışında |
+| `_build/` | Derleme betikleri. `kaynak-uygulama.js` uygulama dışa aktarımını indirip `build.js`'i çalıştırır; `arsiv-eslemesi.json` ve `arsiv-govde.json` WordPress dönemindeki adresleri ve işaretlemeyi korur. `_build/raw/`, `_build/raw-uygulama/` git dışında |
 
-## Yeni sayı çıkınca
+## İçerik nasıl güncellenir
+
+Kendiliğinden: GitHub Actions "İçeriği güncelle" (`.github/workflows/icerik-guncelle.yml`)
+saatte bir, elle (Run workflow) ve uygulama bir sayı yayımlayınca / medya onaylanınca
+(`repository_dispatch`, `icerik-guncellendi`) çalışır: uygulamadan üretir, değişiklik varsa
+"İçerik güncellendi (uygulamadan)" commit'ini main'e atar ve `DEPLOY_ACIK=true` ise Vercel'e yayınlar.
+
+Elle (bilgisayarda):
 
 ```bash
-# 1. WordPress API'sinden ham veriyi indir (helezon/ klasöründe)
-mkdir -p _build/raw && cd _build/raw
-for p in 1 2 3 4 5 6 7 8; do curl -s "https://helezondergisi.com/wp-json/wp/v2/posts?per_page=100&page=$p&_embed=wp:featuredmedia,wp:term" -o posts-$p.json; done
-curl -s "https://helezondergisi.com/wp-json/wp/v2/categories?per_page=100" -o categories.json
-curl -s "https://helezondergisi.com/wp-json/wp/v2/users?per_page=100" -o users.json
-node -e "const fs=require('fs');let a=[];for(let p=1;p<=8;p++){try{a=a.concat(JSON.parse(fs.readFileSync('posts-'+p+'.json')))}catch(e){}}fs.writeFileSync('all-posts.json',JSON.stringify(a))"
-cd ../..
-
-# 2. Sayfaları üret
-node _build/build.js
-
-# 3. Yayınla
-npx vercel deploy --prod --yes
+node _build/kaynak-uygulama.js        # HELEZON_API ile başka bir uygulama adresi verilebilir
+node _build/dogrula.js
 ```
+
+Eski yol (WordPress dışa aktarımı `_build/raw/` ile `node _build/build.js`) hâlâ çalışır ama
+kaynak artık uygulama; yazı, sayı, ses kaydı ve hatıra notları uygulamanın panelinden yönetilir.
 
 Ana sayfadaki "Son Sayı" kartları (`ARTICLES`) ve kapak listesi (`COVERS`) `index.html` içinde elle tutulur.
 
@@ -45,5 +45,6 @@ Kayıtlar `edge-tts` (Microsoft nöral Türkçe sesler Emel ve Ahmet) ile üreti
 
 ## Hatıra defteri
 
-Form gönderileri `helezoniletisim@gmail.com` adresine e-posta olarak gider. Onaylanan
-notlar `data/hatira.json` dosyasına `{"n":"ad","c":"şehir","m":"not","d":"tarih"}` biçiminde eklenir.
+Form gönderileri `helezoniletisim@gmail.com` adresine e-posta olarak gider. `data/hatira.json`
+uygulamadaki onaylı hatıra defteri notlarından üretilir (elle eklenen not bir sonraki üretimde silinir;
+notu uygulamanın hatıra defterine ekleyip panelden onaylayın).
