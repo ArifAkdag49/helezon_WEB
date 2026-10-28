@@ -1,0 +1,49 @@
+# main'e giren her commit: doğrulama → Vercel'e production deploy → canlı adres kontrolü.
+#
+# Deploy adımı yalnız repo değişkeni DEPLOY_ACIK=true iken çalışıyor
+# (Settings → Secrets and variables → Actions → Variables). O zamana kadar
+# yayın elle: npx vercel deploy --prod --yes
+#
+# Gerekenler (Settings → Secrets and variables → Actions):
+#   Secrets:   VERCEL_TOKEN       vercel.com/account/tokens
+#   Variables: VERCEL_ORG_ID      .vercel/project.json → orgId
+#              VERCEL_PROJECT_ID  .vercel/project.json → projectId
+name: Canlıya çıkar
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: canliya-cikar
+  cancel-in-progress: false
+
+jobs:
+  dogrula:
+    uses: ./.github/workflows/ci.yml
+
+  deploy:
+    needs: dogrula
+    if: vars.DEPLOY_ACIK == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      VERCEL_ORG_ID: ${{ vars.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ vars.VERCEL_PROJECT_ID }}
+      CANLI: https://helezon.vercel.app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Vercel'e yayınla
+        run: npx --yes vercel@latest deploy --prod --yes --token "${{ secrets.VERCEL_TOKEN }}"
+      - name: Canlı adres açılıyor mu
+        run: |
+          for i in 1 2 3 4 5 6; do
+            kod=$(curl -s -o /dev/null -w '%{http_code}' "$CANLI/")
+            [ "$kod" = 200 ] && { echo "$CANLI → 200"; exit 0; }
+            sleep 10
+          done
+          echo "$CANLI açılmadı (son kod: $kod)"; exit 1
