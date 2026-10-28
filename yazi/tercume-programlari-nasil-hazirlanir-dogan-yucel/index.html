@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tercüme Programları Nasıl Hazırlanıyor? — Doğan Yücel — Helezon Dergisi</title>
+<meta name="description" content="Bir metni telefonda veya bilgisayarda yazarken bu metne yazım denetimi yapın diyoruz. Ardından bazı kelimelerin altında kesik kırmızı çizgiler çıkıyor. Bunlardan bazılarını yanlış bulup düzeltiyoruz veya programa otomatik tashih et diyoruz. Telefonda mesajlaşm">
+<link rel="canonical" href="https://helezon.vercel.app/yazi/tercume-programlari-nasil-hazirlanir-dogan-yucel/">
+<meta property="og:title" content="Tercüme Programları Nasıl Hazırlanıyor? — Doğan Yücel">
+<meta property="og:description" content="Bir metni telefonda veya bilgisayarda yazarken bu metne yazım denetimi yapın diyoruz. Ardından bazı kelimelerin altında kesik kırmızı çizgiler çıkıyor. Bunlardan bazılarını yanlış bulup düzeltiyoruz veya programa otomatik tashih et diyoruz. Telefonda mesajlaşm">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://helezon.vercel.app/yazi/tercume-programlari-nasil-hazirlanir-dogan-yucel/">
+<meta property="og:image" content="https://helezondergisi.com/wp-content/uploads/2025/04/makale-tercume-1024x640.png">
+<meta name="theme-color" content="#0e0d0b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230e0d0b'/%3E%3Cpath d='M32 32m-2 0a2 2 0 1 0 4 0a4 4 0 1 1 -8 0a6 6 0 1 0 12 0a8 8 0 1 1 -16 0a10 10 0 1 0 20 0a12 12 0 1 1 -24 0a14 14 0 1 0 28 0a16 16 0 1 1 -32 0a18 18 0 1 0 36 0' fill='none' stroke='%23f7f3ec' stroke-width='1.2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=Amiri:ital,wght@0,400;1,400&family=Noto+Sans+Arabic:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/extras.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Tercüme Programları Nasıl Hazırlanıyor?","author":{"@type":"Person","name":"Doğan Yücel"},"datePublished":"2025-04-04T07:52:33","image":"https://helezondergisi.com/wp-content/uploads/2025/04/makale-tercume-1024x640.png","publisher":{"@type":"Organization","name":"Helezon Dergisi"},"isPartOf":{"@type":"PublicationIssue","issueNumber":42,"name":"Helezon Sayı 42"},"mainEntityOfPage":"https://helezon.vercel.app/yazi/tercume-programlari-nasil-hazirlanir-dogan-yucel/"}</script>
+</head>
+<body class="page-art">
+
+<header class="nav solid" id="nav">
+  <a href="/" class="wordmark" aria-label="Helezon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-1 0a1 1 0 1 0 2 0a2 2 0 1 1 -4 0a3 3 0 1 0 6 0a4 4 0 1 1 -8 0a5 5 0 1 0 10 0a6 6 0 1 1 -12 0a7 7 0 1 0 14 0a8 8 0 1 1 -16 0a9 9 0 1 0 18 0"/></svg>Helezon</a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="/sayi/59/" data-i18n="nav.latest">Son Sayı</a>
+    <a href="/yazilar/" data-i18n="nav.pieces">Yazılar</a>
+    <a href="/yazarlar/" data-i18n="nav.authors">Yazarlar</a>
+    <a href="/arsiv/" data-i18n="nav.archive">Arşiv</a>
+    <a href="/#about" data-i18n="nav.about">Hakkında</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false"><span id="langCode">TR</span><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4"/></svg></button>
+      <div class="lang-menu" id="langMenu" role="listbox">
+        <button data-lang="tr" role="option">Türkçe<small>TR</small></button><button data-lang="en" role="option">English<small>EN</small></button><button data-lang="de" role="option">Deutsch<small>DE</small></button><button data-lang="fr" role="option">Français<small>FR</small></button><button data-lang="ar" role="option">العربية<small>AR</small></button><button data-lang="es" role="option">Español<small>ES</small></button><button data-lang="ru" role="option">Русский<small>RU</small></button>
+      </div>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" aria-hidden="true">
+  <ul>
+    <li><a href="/" data-i18n="nav.home">Ana Sayfa</a></li>
+    <li><a href="/sayi/59/" data-i18n="nav.latest">Son Sayı</a></li>
+    <li><a href="/yazilar/" data-i18n="nav.pieces">Yazılar</a></li>
+    <li><a href="/yazarlar/" data-i18n="nav.authors">Yazarlar</a></li>
+    <li><a href="/arsiv/" data-i18n="nav.archive">Arşiv</a></li>
+    <li><a href="/tefrika/" data-i18n="nav.tefrika">Tefrika</a></li>
+    <li><a href="/hatira-defteri/" data-i18n="nav.guestbook">Hatıra Defteri</a></li>
+    <li><a href="/#about" data-i18n="nav.about">Hakkında</a></li>
+  </ul>
+  <div class="langs" id="menuLangs"><button data-lang="tr">TR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="fr">FR</button><button data-lang="ar">AR</button><button data-lang="es">ES</button><button data-lang="ru">RU</button></div>
+</div>
+<main>
+
+<article class="art">
+  <header class="art-head wrap">
+    <div class="art-head-text">
+      <p class="crumbs"><a href="/sayi/42/"><span data-i18n="l.issue">Sayı</span> 42 · Nisan 2025</a><span class="sep">/</span><a href="/tur/makale/">Makale</a></p>
+      <h1>Tercüme Programları Nasıl Hazırlanıyor?</h1>
+      <p class="art-by"><a href="/yazar/doganyucel/">Doğan Yücel</a></p>
+      <p class="art-date">4 Nisan 2025</p>
+    </div>
+    <div class="art-figure"><div class="frame"><img src="https://helezondergisi.com/wp-content/uploads/2025/04/makale-tercume-1024x640.png" alt="" fetchpriority="high"></div></div>
+  </header>
+  <div class="art-body wrap" lang="tr">
+<p>Bir metni telefonda veya bilgisayarda yazarken b<em>u metne yazım denetimi yapın</em> diyoruz. Ardından bazı kelimelerin altında kesik kırmızı çizgiler çıkıyor. Bunlardan bazılarını yanlış bulup düzeltiyoruz veya programa <em>otomatik tashih et</em> diyoruz. Telefonda mesajlaşma uygulamalarında mesaj yazarken bir kelimeye başlayınca hemen karşımıza altta birkaç tane opsiyon çıkıyor. Bitirince de bir sonraki kelime için 3-4 tane seçenek veriyor. Bu durum epeydir e-postalarımızda da yaşanıyor. Makinelere bunları insanlar kodladıysa peki biz insanlar bu bilgiyi nerden alıp makinelere yükledik?</p>
+
+<p>Tercüme programları, metin tashih ve metin analiz programlarının temeli yine biz insanlara ve dilimize dayanıyor. Dil, esasında ortak bir kabuldür. Diğer bir deyişle ictimai bir uzlaşmadır. Hangi kelimeye ne anlam yüklendiği, hangi kelimenin sıfat, zarf, zamir, fiil olacağı, cümle içerisinde neyin ne manaya geldiği vb. o dilin konuşurlarının umumi müşterekliğine istinat eder.</p>
+
+<p>Toplumsal uzlaşı denilen dilin hammaddesi öncelikle seslerdir. Türkiye Türkçesi güncel alfabesinde 29, halk dilinde 35 civarında sese sahiptir. Bu sesler tek başlarına hemen hiçbir bir mana ifade etmezler. Ettiklerini varsaysak bile 30-35 kelime ile dil olmaz. O zaman bu seslerin birden fazlasının ortak kabulle yan yana gelip kelimeler meydana getirmesi gerekir. Bu duruma dil bilimde seslerin birbirlerine eklemlenmesi denir. İki, üç, dört veya daha fazla ses birbirlerine eklemlenerek kelimeleri vücuda getirirler. Milyarlarca kombinasyon içinde sadece birkaç yüz bini bir anlam ifade eder. Seslerden meydana gelen her bir anlamlı kombinasyon dile bir mana katmış olur. Seslerin kaç tanesinin bir kelime edeceği ya da hangi sesin hangi sırada geleceği yine içtimai mutabakatla sağlanır. Seslerin kimi ince, kimi kalın, kendinden ünlü veya ünsüz gibi ortak kaideler de bu minvalde ortaya çıkmış olur. Yani aslında gramer kaideleri ortak kabulün anlaşma maddeleridir de diyebiliriz.</p>
+
+<p>Dildeki kelime sayısı aynı zamanda harfler veya diğer bir tabirle seslerin anlamı olan kombinasyonları kadardır. İşte bu noktada dildeki bütün anlamlı eklemlenmiş ses kombinasyonlarını bir programa kaydetmemiz lazımdır. Böylece bir metin yazıldığında neyin dilde olup olmadığı veya hata olduğunu bize söylemiş olacaktır. Böyle programların öncüsü 1995’te ilk defa piyasaya sürülen dijital sözlüklerle olmuştur. Dijital sözlüklerle başlayan yolculuk ilerledikçe yukarıda bahsedilen programlar geliştirilmiştir.</p>
+
+<p>Lisanların ikinci eklemlenme şekli kelimelerin toplumsal uzlaşıyla muayyen olan bir sıralamayla bir araya gelip cümleler meydana getirmesidir. Burda kelimeler cümledeki yerlerine ve aldıkları eklere göre kelime türleri diye tasnif edilirler. Türkçe tercüme programı KeNet (word net) yani kelime ağı sekiz farklı kelime türüne göre ilk olarak 2004 senesinde BalkaNet ismiyle hazırlanmıştır. Buna göre BalkaNet&#8217;te 14.626 eş anlamlı dizi ve 19.834 iç anlamsal ilişki belirlenmiştir. Bu anlamsal ilişkilere göre isimler 44.074, fiiller 17.791, sıfatlar 12.416, zarflar 2.550, ünlemler 3342, zamirler 68, bağlaçlar 60, edatlar 29 olmak üzere toplamda 77.330 madde sisteme girilmiştir (Bakay, Ergelen, Sarmış, Yıldırım, Kocabalcıoğlu, Arıcan, Özçelik, Sanıyar, Kuyrukçu, Avar ve Yıldız, 2021, s. 169). Yani bazı aynı anlamı karşılayan sinonimlerin de toplanmasıyla bu sayıya ulaşılmıştır. Günümüzde üstte sayıları verilen sekiz kategoride KeNet&#8217;te 77.330 kelime öbeği, 109.049 kelime öbeği parçacığı ve 80.956 ayrı müstakil kelime öbeği bulunmaktadır. Kelime öbeklerinin kelime sayısına gelince, bunların çoğunluğunun tek (72.436 &#8211; %66,48) veya iki kelimeden (31.705 &#8211; %29,36) oluştukları ancak yedi kelimeye kadar çıkanları dahi bulunduğu belirlenmiştir (Bakay, Ergelen, Sarmış, Yıldırım, Kocabalcıoğlu, Arıcan, Özçelik, Sanıyar, Kuyrukçu, Avar ve Yıldız, 2021, s. 169).&nbsp;</p>
+
+<p>Kelimelerin cümle içerisinde aldıkları yerlere ve müstakil anlamlarına göre girişleri yapıldıktan sonra bu kelimelerin birbirleriyle ne tür bir ilişki içerisinde oldukları da sisteme girilmelidir. Bunlar temel anlam (45,389), türemiş anlam (39,682), terim anlam (15,366), özel anlam (2,718), zıt anlam (1,884), genel anlam (1,345), yakın anlam (862), yan anlam (367) ve niteleme (226) olmak üzere dokuz farklı sınıfa ayrılmışlardır. Ardından bu kelimelerin ilk hazırlanan dil olan İngilizceyle KeNet ve PWN şeklinde eşleştirmeleri yapılmıştır. Arzu edenler üstte kaynak verdiğimiz tebliğden kaç tanesinin birebir ve bire çok biçimde eşleştirildiğini, kaç kelime grubunun eşleşmede vb. kullanıldığına bakabilir.</p>
+
+<p>Son olarak bir tercüme ve metin analiz programında olması gereken biraz önce geçtiği üzere anlam sahalarının belirlenmesi ve kelimelerin ilgili anlamlarının o sahaların altlarına yerleştirilmeleridir. Çünkü kelimelerin epey kısmı tek anlamlıyken bazı kelimeler ise birden fazla sahada anlamlara sahiptirler. Mesela; burun, kaş, sırt, ağız, çene, baş, ayak, kol, göz hem bir uzuvken hem de bir coğrafi terimdir. <em>Çenem ağrıyor</em> ile <em>çeneyi döndüm</em> cümleleri farklı anlamlara sahip. <em>Ağzını aç</em> ile <em>mağaranın ağzından girdim</em> de yine aynı kelimelerin yanındaki kelimelerle ikinci, üçüncü, beşinci vs. anlamlarının kullanılmasına örnektir.</p>
+
+<p>Türkçe için sekiz ana tema altında 139 anlam sahası belirlenmiştir. Bunlardan 123 tanesi İngilizceyle ortak olup 16’sı ise Türkçeye hastır. Bu ilk çalışma 139 anlam sahasında 2561 eş anlamlı küme ve 4080 sözcük birimi sunmaktadır (Marşan, Kara, Özçelik, Arıcan, Cesur, Kuzgun, Sanıyar, Kuyrukçu ve Yıldız, 2021). Bütün bu işlemlerin ardından bir tercüme programı hazır hâle gelmiş demektir. Misal vermek gerekirse diyelim ki tabiat bir ana başlığımız olsun. Bu ana başlık altında orman kelime kümesi yer alsın. Bu kelime yığınının altında da ağaç alt dalı bulunduralım. İşte bu alt dala ne kadar ağaçla ilgili kelime varsa ekleyelim. İşte bu işi 2561 alt küme için tek tek yapalım. Bütün bu binlerce saatlik çalışma sonrası dilimizin kelimeleri arasındaki anlam ağları programa girilmiş olacaktır.</p>
+
+<p>Dil canlı ve her geçen gün değişen ve farklılaşan bir varlıktır. Ayrıca ıskalanmış ya da nadir kullanılan kelimeler de sisteme dâhil edilmemiş olabilecektir. Bu açıdan anılan programlar kullanıcılarına uygulamayı geliştirmeleri için önerilerde bulunmalarını da istemektedirler. Metin tashihi eklemlenmeye, tercüme programı kelime türleri ve ilişkileri temelinde çalışırken metin analiz programları ise metindeki kelimelerin hangi anlam sahalarına ait olduklarını belirleme esası üzerine kurulmuştur.&nbsp;</p>
+
+<p><strong>Kaynaklar</strong></p>
+
+<p>Bakay, Ö., Ergelen, Ö., Sarmış, E., Yıldırım, S., Kocabalcıoğlu, A., Arıcan, B. N., Özçelik, M.,&nbsp; Sanıyar, E., Kuyrukçu, O., Avar, B. &amp; Yıldız, O. T. (2021). Turkish WordNet KeNet. Global Wordnet Conference At: Virtual Conference (ss. 166-174).</p>
+
+<p>Marşan, B., Kara, N., Özçelik, M.,&nbsp; Arıcan, B. N., Cesur, N., Kuzgun, A., Sanıyar, E., Kuyrukçu, O. &amp; Yıldız, O. T. (2021). Global Wordnet Conference At: Virtual Conference (ss. 118-125).</p>
+
+<h3></h3>
+
+<p>.&nbsp;</p>
+  </div>
+  <footer class="art-foot wrap">
+    <div class="art-share">
+      <span class="eyebrow" data-i18n="l.share">Paylaş</span>
+      <button class="chip" data-copy="https://helezon.vercel.app/yazi/tercume-programlari-nasil-hazirlanir-dogan-yucel/"><span data-i18n="l.copy">Bağlantıyı kopyala</span></button>
+      <a class="chip" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text=Terc%C3%BCme%20Programlar%C4%B1%20Nas%C4%B1l%20Haz%C4%B1rlan%C4%B1yor%3F%20%E2%80%94%20Do%C4%9Fan%20Y%C3%BCcel&url=https%3A%2F%2Fhelezon.vercel.app%2Fyazi%2Ftercume-programlari-nasil-hazirlanir-dogan-yucel%2F">X</a>
+      <a class="chip" target="_blank" rel="noopener" href="https://wa.me/?text=Terc%C3%BCme%20Programlar%C4%B1%20Nas%C4%B1l%20Haz%C4%B1rlan%C4%B1yor%3F%20%E2%80%94%20Do%C4%9Fan%20Y%C3%BCcel%20https%3A%2F%2Fhelezon.vercel.app%2Fyazi%2Ftercume-programlari-nasil-hazirlanir-dogan-yucel%2F">WhatsApp</a>
+      <a class="chip ghost" target="_blank" rel="noopener" href="https://helezondergisi.com/tercume-programlari-nasil-hazirlanir-dogan-yucel/" data-i18n="l.original">helezondergisi.com'da görüntüle</a>
+    </div>
+    <nav class="art-nav">
+      <a class="prev" href="/yazi/istanbulun-gozyaslari-zeynep-hafsa-dayi/"><span class="eyebrow" data-i18n="l.prev">Önceki</span><span class="t">İstanbul’un Gözyaşları</span><span class="by">Zeynep Hafsa Dayı</span></a>
+      <a class="next" href="/yazi/sommerfugl-henrik-wergeland/"><span class="eyebrow" data-i18n="l.next">Sonraki</span><span class="t">Sommerfugl</span><span class="by">Henrik Wergeland</span></a>
+    </nav>
+    <section class="related"><h2 class="sec-title"><span data-i18n="l.moreBy">Yazarın diğer yazıları</span> <a class="all" href="/yazar/doganyucel/">Doğan Yücel →</a></h2><ul class="toc"><li><a href="/yazi/dil-ve-medeniyet-dogan-yucel/"><span class="tag">Makale</span><span class="t">Dil ve Medeniyet</span><span class="no"><span data-i18n="l.issue">Sayı</span> 56 · Haziran 2026</span><i class="arr"></i></a></li><li><a href="/yazi/dil-sapmalari-dogan-yucel/"><span class="tag">Makale</span><span class="t">Dil Sapmaları</span><span class="no"><span data-i18n="l.issue">Sayı</span> 55 · Mayıs 2026</span><i class="arr"></i></a></li><li><a href="/yazi/dil-nasil-zenginlesir-dogan-yucel/"><span class="tag">Makale</span><span class="t">Dil Nasıl Zenginleşir?</span><span class="no"><span data-i18n="l.issue">Sayı</span> 54 · Nisan 2026</span><i class="arr"></i></a></li><li><a href="/yazi/dillerin-zenginligi-nasil-olculur-dogan-yucel/"><span class="tag">Makale</span><span class="t">Dillerin Zenginliği Nasıl Ölçülür?</span><span class="no"><span data-i18n="l.issue">Sayı</span> 53 · Mart 2026</span><i class="arr"></i></a></li><li><a href="/yazi/dil-neden-degistirilir-dogan-yucel/"><span class="tag">Makale</span><span class="t">Dil Neden Değiştirilir?</span><span class="no"><span data-i18n="l.issue">Sayı</span> 52 · Şubat 2026</span><i class="arr"></i></a></li><li><a href="/yazi/kultur-dile-nasil-etki-eder-dogan-yucel/"><span class="tag">Makale</span><span class="t">Kültür Dile Nasıl Etki Eder?</span><span class="no"><span data-i18n="l.issue">Sayı</span> 50 · Aralık 2025</span><i class="arr"></i></a></li></ul></section>
+    <section class="related"><h2 class="sec-title"><span data-i18n="l.sameIssue">Aynı sayıdan</span> <a class="all" href="/sayi/42/"><span data-i18n="l.issue">Sayı</span> 42 →</a></h2><div class="pgrid"><a class="pcard" href="/yazi/kufi-fatimi-hat-filiz-altunbas/"><div class="frame"><img src="https://helezondergisi.com/wp-content/uploads/2025/04/hat-1024x640.png" alt="" loading="lazy"></div><div class="pcard-body"><span class="tag">Kaligrafi</span><h3>Kûfi/Fatimi Hat</h3><span class="by">Filiz Altunbaş</span></div></a><a class="pcard" href="/yazi/vagondaki-cocuk/"><div class="frame"><img src="https://helezondergisi.com/wp-content/uploads/2025/04/siir-vagon-1024x640.png" alt="" loading="lazy"></div><div class="pcard-body"><span class="tag">Şiir</span><h3>Vagondaki Çocuk</h3><span class="by">Seher Sağlam</span></div></a><a class="pcard" href="/yazi/kapiyi-cal-cayi-demle-nurettin-sariaslan/"><div class="frame"><img src="https://helezondergisi.com/wp-content/uploads/2025/04/deneme-kapiyi-cal-1024x640.png" alt="" loading="lazy"></div><div class="pcard-body"><span class="tag">Deneme</span><h3>Kapıyı Çal, Çayı Demle!</h3><span class="by">Nurettin Sarıaslan</span></div></a><a class="pcard" href="/yazi/bosna-zeynep-n-yucel/"><div class="frame"><img src="https://helezondergisi.com/wp-content/uploads/2025/04/Resim-Editli-BOSNA-ZeynepN-Yucel-738x1024.jpg" alt="" loading="lazy"></div><div class="pcard-body"><span class="tag">Resim</span><h3>Bosna</h3><span class="by">Zeynep N. Yücel</span></div></a></div></section>
+  </footer>
+</article>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-1 0a1 1 0 1 0 2 0a2 2 0 1 1 -4 0a3 3 0 1 0 6 0a4 4 0 1 1 -8 0a5 5 0 1 0 10 0a6 6 0 1 1 -12 0a7 7 0 1 0 14 0a8 8 0 1 1 -16 0a9 9 0 1 0 18 0"/></svg><span data-i18n="footer.brand">Helezon Dergisi</span></div>
+        <p class="tagline" data-i18n="footer.tag">Edebiyatın, sanatın ve düşüncenin izinde.</p></div>
+      <div><p class="col-title" data-i18n="footer.follow">Takip et</p><ul>
+        <li><a href="https://www.instagram.com/helezon.dergisi/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://twitter.com/Helezondergi" target="_blank" rel="noopener">X · Twitter</a></li>
+        <li><a href="https://www.youtube.com/channel/UCrWbjIyCWuav28OnLglV_aw" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://helezondergisi.com" target="_blank" rel="noopener">helezondergisi.com</a></li></ul></div>
+      <div><p class="col-title" data-i18n="footer.explore">Keşfet</p><ul>
+        <li><a href="/yazilar/" data-i18n="nav.pieces">Yazılar</a></li>
+        <li><a href="/yazarlar/" data-i18n="nav.authors">Yazarlar</a></li>
+        <li><a href="/arsiv/" data-i18n="nav.archive">Arşiv</a></li>
+        <li><a href="/tefrika/" data-i18n="nav.tefrika">Tefrika</a></li>
+        <li><a href="/hatira-defteri/" data-i18n="nav.guestbook">Hatıra Defteri</a></li>
+        <li><a href="/ayraclar/" data-i18n="nav.bookmarks">Ayraçlarım</a></li>
+        <li><a href="mailto:helezoniletisim@gmail.com" data-i18n="footer.contact">İletişim</a></li>
+        <li style="margin-top:12px"><a class="mail" href="mailto:helezoniletisim@gmail.com">helezoniletisim@gmail.com</a></li></ul></div>
+      <div><p class="col-title" data-i18n="footer.masthead">Künye</p><div class="mast">
+        <div><span data-i18n="roles.chief">Yayın Yönetmeni</span><b>Erdal Karaman</b></div>
+        <div><span data-i18n="roles.editor">Editör</span><b>Seher Sağlam</b></div>
+        <div><span data-i18n="roles.managing">Yazı İşleri</span><b>Doğan Yücel</b></div></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Helezon Dergisi · ISSN 2995-0953</span><span>Paramus Publishing · Clifton, NJ</span><span data-i18n="footer.rights">Tüm hakları saklıdır.</span></div>
+  </div>
+</footer>
+<div class="progress" id="progress" aria-hidden="true"><svg viewBox="0 0 60 60"><path id="progPath" d=""/></svg></div>
+<script src="/assets/site.js" defer></script>
+<script src="/assets/extras.js" defer></script>
+</body>
+</html>

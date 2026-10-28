@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helezon Dergisi — Edebiyat · Kültür · Sanat</title>
+<meta name="description" content="Helezon, 2021'den bu yana aylık yayımlanan çevrim içi bir edebiyat, kültür ve sanat dergisidir. Şiir, hikâye, deneme, biyografi, çeviri ve sanat. ISSN 2995-0953.">
+<meta name="theme-color" content="#0e0d0b">
+<meta property="og:title" content="Helezon Dergisi">
+<meta property="og:description" content="Edebiyatın içinden bir yolculuk. Şiir · Öykü · Deneme · Sanat · Çeviri · Kültür">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://helezondergisi.com/wp-content/uploads/2026/09/1-10-1024x640.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230e0d0b'/%3E%3Cpath d='M32 32m-2 0a2 2 0 1 0 4 0a4 4 0 1 1 -8 0a6 6 0 1 0 12 0a8 8 0 1 1 -16 0a10 10 0 1 0 20 0a12 12 0 1 1 -24 0a14 14 0 1 0 28 0a16 16 0 1 1 -32 0a18 18 0 1 0 36 0' fill='none' stroke='%23f7f3ec' stroke-width='1.2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preconnect" href="https://helezondergisi.com">
+<link rel="preconnect" href="https://videos.pexels.com">
+<link rel="stylesheet" href="/assets/extras.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&family=Amiri:ital,wght@0,400;1,400&family=Noto+Sans+Arabic:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Periodical","name":"Helezon Dergisi","alternateName":"Helezon Magazine","issn":"2995-0953","description":"Çevrim içi edebiyat, kültür ve sanat dergisi. 2021'den bu yana aylık.","url":"https://helezondergisi.com","sameAs":["https://www.instagram.com/helezon.dergisi/","https://twitter.com/Helezondergi","https://www.youtube.com/channel/UCrWbjIyCWuav28OnLglV_aw"],"inLanguage":["tr"],"publisher":{"@type":"Organization","name":"Helezon Dergisi","email":"helezoniletisim@gmail.com"}}
+</script>
+<style>
+:root{
+  --ink:#0e0d0b;
+  --ink-2:#221f1b;
+  --warm:#f7f3ec;
+  --ivory:#efe9dd;
+  --cream:#e6decf;
+  --mute:#8a8177;
+  --line:rgba(14,13,11,.14);
+  --line-light:rgba(247,243,236,.18);
+  --wine:#6e1f2a;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --gutter:clamp(20px,5vw,88px);
+}
+html[lang="ar"]{
+  --serif:"Amiri","Cormorant Garamond",serif;
+  --sans:"Noto Sans Arabic","Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:auto;-webkit-text-size-adjust:100%}
+html.lenis,html.lenis body{height:auto}
+.lenis.lenis-smooth{scroll-behavior:auto!important}
+.lenis.lenis-stopped{overflow:hidden}
+body{
+  background:var(--warm);color:var(--ink);
+  font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+ul{list-style:none}
+:focus-visible{outline:1.5px solid var(--wine);outline-offset:4px}
+::selection{background:var(--wine);color:var(--warm)}
+
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:300;line-height:1.05;letter-spacing:-.01em}
+.eyebrow{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+html[dir="rtl"] .eyebrow,html[dir="rtl"] .btn,html[dir="rtl"] .nav-links a,html[dir="rtl"] .wordmark,html[dir="rtl"] .lang-btn,html[dir="rtl"] .card-meta,html[dir="rtl"] .tag,html[dir="rtl"] .toc .tag,html[dir="rtl"] .author .role,html[dir="rtl"] .facts{letter-spacing:0}
+.wine{color:var(--wine)}
+.section{padding:clamp(96px,14vh,180px) var(--gutter)}
+.wrap{max-width:1480px;margin-inline:auto}
+.rule{height:1px;background:var(--line)}
+.reveal{opacity:0;transform:translateY(28px)}
+.no-js .reveal,.reduced .reveal{opacity:1;transform:none}
+
+/* ---------- Nav ---------- */
+.nav{
+  position:fixed;inset-inline:0;top:0;z-index:50;
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  padding:22px var(--gutter);color:var(--warm);
+  transition:background .6s var(--ease),color .6s var(--ease),padding .6s var(--ease),box-shadow .6s;
+}
+.nav.solid{background:rgba(247,243,236,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--ink);padding-block:14px;box-shadow:0 1px 0 var(--line)}
+.wordmark{font-family:"Cormorant Garamond",var(--serif);font-weight:400;font-size:22px;letter-spacing:.32em;text-transform:uppercase;display:inline-flex;align-items:center;gap:12px;justify-self:start}
+.wordmark svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.1}
+.nav-links{display:flex;gap:clamp(12px,1.4vw,24px);justify-self:center;padding-inline:24px}
+.nav-links a{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;opacity:.82;position:relative;padding:6px 0;white-space:nowrap}
+.nav-links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.nav-links a:hover{opacity:1}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-right{grid-column:3;justify-self:end;display:flex;align-items:center;gap:18px}
+.lang{position:relative}
+.lang-btn{font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;padding:8px 2px}
+.lang-btn svg{width:9px;height:9px;stroke:currentColor;fill:none;stroke-width:1.4;transition:transform .4s}
+.lang.open .lang-btn svg{transform:rotate(180deg)}
+.lang-menu{position:absolute;inset-inline-end:0;top:calc(100% + 10px);min-width:190px;background:var(--warm);color:var(--ink);border:1px solid var(--line);padding:10px 0;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .35s var(--ease),transform .35s var(--ease),visibility .35s;box-shadow:0 30px 60px -20px rgba(0,0,0,.35)}
+.lang.open .lang-menu{opacity:1;visibility:visible;transform:none}
+.lang-menu button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:9px 18px;font-family:"Cormorant Garamond",serif;font-size:19px;line-height:1.1;text-align:start}
+.lang-menu button small{font-family:var(--sans);font-size:10px;letter-spacing:.2em;color:var(--mute)}
+.lang-menu button:hover{background:var(--ivory)}
+.lang-menu button.active{color:var(--wine)}
+.lang-menu button[data-lang="ar"]{font-family:"Amiri",serif}
+.burger{display:none;width:40px;height:40px;position:relative;margin-inline-start:6px}
+.burger span{position:absolute;left:9px;right:9px;height:1px;background:currentColor;transition:transform .5s var(--ease),opacity .3s}
+.burger span:nth-child(1){top:15px}.burger span:nth-child(2){top:20px}.burger span:nth-child(3){top:25px}
+body.menu-open .burger span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+body.menu-open .burger span:nth-child(2){opacity:0}
+body.menu-open .burger span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+.menu{position:fixed;inset:0;z-index:40;background:var(--ink);color:var(--warm);display:flex;flex-direction:column;justify-content:center;padding:100px var(--gutter) 60px;opacity:0;visibility:hidden;transition:opacity .6s var(--ease),visibility .6s}
+body.menu-open .menu{opacity:1;visibility:visible}
+.menu ul{display:grid;gap:4px}
+.menu a{font-family:var(--serif);font-size:clamp(30px,6vw,48px);line-height:1.15;opacity:0;transform:translateY(14px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+body.menu-open .menu a{opacity:1;transform:none}
+.menu .langs{margin-top:40px;display:flex;flex-wrap:wrap;gap:8px 22px}
+.menu .langs button{font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;padding:6px 0}
+.menu .langs button.active{opacity:1;border-bottom:1px solid var(--wine)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;height:100svh;min-height:600px;overflow:hidden;background:var(--ink);color:var(--warm);display:grid;place-items:center;text-align:center}
+.hero-media{position:absolute;inset:0}
+.hero-media video,.hero-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.8s ease}
+.hero-media video.on,.hero-media img.on{opacity:1}
+.hero-media img.poster{opacity:.9}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,13,11,.55) 0%,rgba(14,13,11,.35) 40%,rgba(14,13,11,.55) 100%);pointer-events:none}
+.hero-grain{position:absolute;inset:0;opacity:.07;mix-blend-mode:overlay;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-inner{position:relative;z-index:2;padding:0 var(--gutter);max-width:1100px}
+.hero-title{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:clamp(64px,13vw,196px);line-height:.95;letter-spacing:.22em;text-transform:uppercase;margin-inline-start:.22em;display:inline-flex;direction:ltr}
+.hero-title span{display:inline-block;opacity:0;transform:translateY(30px)}
+.hero-sub{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(22px,3vw,38px);margin-top:22px;opacity:0}
+.hero-meta{margin-top:26px;font-size:11px;letter-spacing:.24em;text-transform:uppercase;opacity:0;color:rgba(247,243,236,.75)}
+html[dir="rtl"] .hero-meta{letter-spacing:.05em}
+.hero-cta{margin-top:46px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;opacity:0}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 28px;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;border:1px solid currentColor;transition:background .5s var(--ease),color .5s var(--ease),border-color .5s}
+.btn:hover{background:var(--warm);color:var(--ink)}
+.btn.solid{background:var(--warm);color:var(--ink)}
+.btn.solid:hover{background:transparent;color:var(--warm)}
+.btn.ink{border-color:var(--ink);color:var(--ink)}
+.btn.ink:hover{background:var(--ink);color:var(--warm)}
+.btn.wine{background:var(--wine);border-color:var(--wine);color:var(--warm)}
+.btn.wine:hover{background:var(--ink);border-color:var(--ink);color:var(--warm)}
+.scroll-cue{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:12px;font-size:10px;letter-spacing:.3em;text-transform:uppercase;opacity:0;color:rgba(247,243,236,.7)}
+.scroll-cue i{display:block;width:1px;height:54px;background:linear-gradient(180deg,rgba(247,243,236,.0),rgba(247,243,236,.8));animation:cue 2.6s var(--ease) infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.reduced .scroll-cue i{animation:none}
+
+/* ---------- Behind the Words ---------- */
+.behind{background:var(--warm)}
+.behind-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,110px);align-items:end}
+.behind h2{font-size:clamp(52px,8.5vw,140px);line-height:.95;letter-spacing:-.02em}
+.behind-copy{max-width:520px;margin-inline-start:auto}
+.behind-copy .verse{font-family:var(--serif);font-style:italic;font-size:clamp(24px,2.6vw,34px);line-height:1.3;color:var(--ink-2)}
+.behind-copy p.lead{margin-top:28px;font-size:17px;max-width:440px;color:var(--ink-2)}
+.behind-copy p.about{margin-top:18px;font-size:15px;max-width:440px;color:var(--mute)}
+.behind-copy .rule{margin:34px 0 0;width:56px;background:var(--wine);height:1px}
+.facts{margin-top:30px;display:flex;flex-wrap:wrap;gap:8px 22px;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.facts b{font-weight:500;color:var(--ink)}
+.behind-figure{margin-top:clamp(56px,9vw,120px)}
+.frame{position:relative;overflow:hidden;background:var(--cream)}
+.frame img{width:100%;height:100%;object-fit:cover;transform:scale(1.16);will-change:transform}
+.behind-figure .frame{aspect-ratio:16/8.4}
+.behind-figure figcaption{display:flex;justify-content:space-between;gap:20px;padding-top:14px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+html[dir="rtl"] .behind-figure figcaption{letter-spacing:0}
+
+/* ---------- Latest Issue ---------- */
+.issue{background:var(--ivory)}
+.section-head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:clamp(48px,6vw,84px)}
+.section-head h2{font-size:clamp(48px,7vw,112px);line-height:.95}
+.section-head .sub{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.3vw,32px);line-height:1.25;text-align:end;color:var(--ink-2)}
+.section-head .sub span{display:block}
+.issue-label{display:flex;align-items:center;gap:16px;margin-bottom:22px}
+.issue-label .rule{width:40px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(18px,2.4vw,36px)}
+.card{position:relative;display:flex;flex-direction:column;gap:18px}
+.card .frame{width:100%;aspect-ratio:3/4}
+.card .frame img{transform:scale(1.02);object-position:90% 50%;transition:transform 1.4s var(--ease)}
+.card:hover .frame img{transform:scale(1.08)}
+.card h3{font-size:clamp(24px,2.2vw,36px);line-height:1.1;transition:transform .8s var(--ease)}
+.card:hover h3{transform:translateX(6px)}
+html[dir="rtl"] .card:hover h3{transform:translateX(-6px)}
+.card h3 .alt{display:block;font-size:.58em;font-style:italic;color:var(--mute);margin-top:.35em;line-height:1.25}
+.card p.ex{font-size:14.5px;line-height:1.6;color:var(--ink-2);max-width:46ch}
+.card-meta{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.card-meta .by{color:var(--ink);letter-spacing:.06em;text-transform:none;font-family:var(--serif);font-size:18px;font-style:italic}
+.tag{color:var(--wine)}
+.card .more{margin-top:auto;font-size:11px;letter-spacing:.2em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;color:var(--ink)}
+.card .more::after{content:"";width:28px;height:1px;background:currentColor;transition:width .5s var(--ease)}
+.card:hover .more::after{width:44px}
+.card.c1{grid-column:1/7;grid-row:1/3}
+.card.c1 .frame{aspect-ratio:4/4.7}
+.card.c1 h3{font-size:clamp(32px,3.4vw,56px)}
+.card.c2{grid-column:7/10;grid-row:1}
+.card.c3{grid-column:10/13;grid-row:1}
+.card.c4{grid-column:7/10;grid-row:2}
+.card.c5{grid-column:10/13;grid-row:2;background:var(--ink);color:var(--warm);padding:clamp(26px,2.6vw,40px);justify-content:space-between}
+.card.c5 h3{font-style:italic;font-size:clamp(26px,2.3vw,38px)}
+.card.c5 .card-meta{color:rgba(247,243,236,.6)}
+.card.c5 .card-meta .by,.card.c5 .more{color:var(--warm)}
+.card.c5 p.ex{color:rgba(247,243,236,.75)}
+.card.c5 .quote-mark{font-family:var(--serif);font-size:96px;line-height:.6;color:var(--wine);margin-bottom:26px}
+.toc{grid-column:1/13;margin-top:clamp(24px,3vw,48px)}
+.toc .eyebrow{margin-bottom:12px}
+.toc ol{list-style:none}
+.toc li{border-top:1px solid var(--line)}
+.toc li:last-child{border-bottom:1px solid var(--line)}
+.toc a{display:grid;grid-template-columns:110px 1fr auto 28px;align-items:baseline;gap:20px;padding:18px 0;transition:padding-inline-start .6s var(--ease)}
+.toc a:hover{padding-inline-start:14px}
+.toc .tag{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase}
+.toc .t{font-family:var(--serif);font-size:clamp(20px,1.9vw,28px);line-height:1.15}
+.toc .by{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--ink-2);white-space:nowrap}
+.toc .arr{width:22px;height:1px;background:var(--ink);align-self:center;transition:width .5s var(--ease)}
+.toc a:hover .arr{width:28px}
+
+/* ---------- Featured ---------- */
+.featured{position:relative;min-height:100svh;color:var(--warm);display:flex;align-items:flex-end;overflow:hidden;background:var(--ink)}
+.featured .frame{position:absolute;inset:0}
+.featured .frame img{height:110%;transform:none}
+.featured::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,13,11,.15) 0%,rgba(14,13,11,.3) 45%,rgba(14,13,11,.85) 100%);z-index:1}
+.featured-inner{position:relative;z-index:2;padding:clamp(70px,10vh,140px) var(--gutter) clamp(60px,9vh,110px);max-width:1480px;width:100%;margin-inline:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}
+.featured .eyebrow{color:var(--warm);display:flex;align-items:center;gap:14px;margin-bottom:26px}
+.featured .eyebrow i{display:block;width:34px;height:1px;background:var(--wine)}
+.featured h2{font-size:clamp(40px,6vw,96px);line-height:1;max-width:14ch}
+.featured h2 .kicker{display:block;font-size:.5em;font-style:italic;line-height:1.2;margin-bottom:.4em;color:rgba(247,243,236,.85)}
+.featured-desc .verse{font-family:var(--serif);font-size:clamp(20px,1.9vw,27px);line-height:1.35;font-style:italic;color:rgba(247,243,236,.92)}
+.featured-desc .author{margin-top:22px;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,243,236,.7)}
+.featured-desc .btn{margin-top:34px}
+
+/* ---------- Poetry ---------- */
+.poetry{background:var(--cream);position:relative;overflow:hidden}
+.poetry .wrap{position:relative;z-index:1}
+.poetry .eyebrow{margin-bottom:56px;display:flex;align-items:center;gap:14px}
+.poetry .eyebrow i{width:34px;height:1px;background:var(--wine);display:block}
+.poetry h2{font-size:clamp(16px,1.4vw,18px);font-family:var(--sans);font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);line-height:1}
+.verses{margin-top:40px;max-width:1200px;direction:ltr;text-align:start}
+html[dir="rtl"] .verses{text-align:right}
+.verse-line{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:300;font-size:clamp(32px,5.8vw,96px);line-height:1.1;letter-spacing:-.015em;opacity:.08;transform:translateY(24px);color:var(--ink)}
+.verse-line.b{margin-bottom:clamp(30px,5vw,70px)}
+.reduced .verse-line,.no-js .verse-line{opacity:1;transform:none}
+.poetry .attribution{margin-top:48px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.poetry .attribution i{width:34px;height:1px;background:var(--ink);opacity:.3;display:block}
+.poetry .attribution a{color:var(--wine);border-bottom:1px solid transparent;transition:border-color .4s}
+.poetry .attribution a:hover{border-color:var(--wine)}
+html[dir="rtl"] .poetry .attribution{letter-spacing:0}
+
+/* ---------- Categories ---------- */
+.cats{background:var(--ink);color:var(--warm);position:relative;overflow:hidden;min-height:100svh;display:flex;align-items:center}
+.cats-bg{position:absolute;inset:0;z-index:0}
+.cats-bg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity 1.1s var(--ease),transform 3s var(--ease);filter:saturate(.75) brightness(.55)}
+.cats-bg img.on{opacity:1;transform:scale(1)}
+.cats .wrap{position:relative;z-index:1;width:100%}
+.cats .eyebrow{color:rgba(247,243,236,.6);margin-bottom:40px}
+.cat-list li{border-top:1px solid var(--line-light)}
+.cat-list li:last-child{border-bottom:1px solid var(--line-light)}
+.cat-list a{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:clamp(10px,1.4vw,18px) 0;font-family:var(--serif);font-size:clamp(40px,7.4vw,112px);line-height:1;letter-spacing:-.02em;font-weight:300;transition:padding-inline-start .7s var(--ease),color .5s}
+.cat-list a:hover{padding-inline-start:clamp(10px,2vw,36px);color:var(--warm)}
+.cat-list a small{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,243,236,.5);transition:color .5s}
+.cat-list a:hover small{color:var(--warm)}
+.cat-list li.dim a{color:rgba(247,243,236,.32)}
+
+/* ---------- Authors (typographic, no portraits) ---------- */
+.authors{background:var(--warm)}
+.authors-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:clamp(12px,1.5vw,22px)}
+.author{
+  position:relative;aspect-ratio:3/4;overflow:hidden;container-type:inline-size;
+  background:var(--ivory);color:var(--ink);
+  box-shadow:inset 0 0 0 1px rgba(14,13,11,.05),0 26px 40px -30px rgba(14,13,11,.5);
+  transition:transform .8s var(--ease),box-shadow .8s var(--ease);
+}
+.author:nth-child(3n+2){background:var(--cream)}
+.author:nth-child(3n){background:#f3eee4}
+.author.lead{background:var(--ink);color:var(--warm);box-shadow:0 30px 50px -30px rgba(14,13,11,.8)}
+.author:hover,.author.open{transform:translateY(-6px);box-shadow:inset 0 0 0 1px rgba(14,13,11,.05),0 40px 60px -30px rgba(14,13,11,.6)}
+.author .mark{
+  position:absolute;inset-inline-end:-4%;bottom:-16%;font-family:"Cormorant Garamond",serif;font-weight:300;
+  font-size:118cqw;line-height:1;color:currentColor;opacity:.07;pointer-events:none;user-select:none;
+  -webkit-mask-image:linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,.15));mask-image:linear-gradient(180deg,rgba(0,0,0,1),rgba(0,0,0,.15));
+  transition:transform 1.2s var(--ease),opacity .8s;
+}
+.author:hover .mark,.author.open .mark{transform:translate(-4%,-6%) scale(1.04);opacity:.11}
+.author .mono{position:absolute;top:14px;inset-inline-start:14px;font-family:"Cormorant Garamond",serif;font-size:12px;letter-spacing:.24em;color:var(--mute)}
+.author.lead .mono{color:rgba(247,243,236,.6)}
+.author .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,13,11,0) 20%,rgba(14,13,11,.02) 55%,rgba(14,13,11,.09) 100%);pointer-events:none}
+.author.lead .veil{background:linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(0,0,0,.3) 100%)}
+.author .body{position:absolute;inset-inline:14px;bottom:14px;display:flex;flex-direction:column;gap:6px;transition:transform .7s var(--ease)}
+.author .name{font-family:var(--serif);font-size:clamp(17px,7.6cqw,24px);line-height:1.05;font-weight:400}
+.author .role{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--wine)}
+.author.lead .role{color:#d9c39a}
+.author .info{position:absolute;inset-inline:14px;bottom:14px;padding-top:10px;border-top:1px solid var(--line);opacity:0;transform:translateY(12px);transition:opacity .6s var(--ease),transform .6s var(--ease);font-size:11.5px;line-height:1.45;color:var(--ink-2)}
+.author.lead .info{color:rgba(247,243,236,.8);border-color:var(--line-light)}
+.author .info .piece{font-family:var(--serif);font-style:italic;font-size:14px;line-height:1.25;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.author .info .label{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin-bottom:4px}
+.author .info a{display:inline-flex;align-items:center;gap:8px;margin-top:8px;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--wine)}
+.author.lead .info a{color:#d9c39a}
+.author .info a::after{content:"";width:18px;height:1px;background:currentColor}
+.author:hover .body,.author.open .body,.author:focus-within .body{transform:translateY(-86px)}
+.author:hover .info,.author.open .info,.author:focus-within .info{opacity:1;transform:none}
+.author.nopiece:hover .body,.author.nopiece.open .body,.author.nopiece:focus-within .body{transform:translateY(-44px)}
+.authors-note{margin-top:34px;font-size:12px;color:var(--mute);display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.authors-note a{color:var(--wine);border-bottom:1px solid transparent;transition:border-color .4s}
+.authors-note a:hover{border-color:var(--wine)}
+
+/* ---------- Manifesto ---------- */
+.manifesto{background:var(--ivory);position:relative;overflow:hidden;min-height:90svh;display:grid;place-items:center;text-align:center}
+.manifesto .spiral{position:absolute;left:50%;top:50%;width:min(120vw,900px);height:auto;transform:translate(-50%,-50%);opacity:.08;pointer-events:none;stroke:var(--ink);fill:none;stroke-width:.9}
+.manifesto blockquote{position:relative;z-index:1;font-family:var(--serif);font-size:clamp(30px,4.6vw,72px);line-height:1.18;max-width:20ch;font-weight:300}
+.manifesto blockquote span{display:block}
+.manifesto cite{display:block;margin-top:40px;font-style:normal;font-family:var(--sans);font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--wine)}
+
+/* ---------- Archive ---------- */
+.archive{background:var(--warm);padding-inline:0}
+.archive .section-head,.archive .years{padding-inline:var(--gutter)}
+.years{display:flex;gap:6px 26px;flex-wrap:wrap;margin-bottom:38px}
+.years button{font-family:var(--serif);font-size:clamp(22px,2.4vw,32px);color:var(--mute);padding:6px 0;position:relative;transition:color .4s}
+.years button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--wine);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.years button.active{color:var(--ink)}
+.years button.active::after{transform:scaleX(1)}
+.covers{display:flex;gap:clamp(14px,2vw,30px);overflow-x:auto;padding:6px var(--gutter) 30px;scroll-snap-type:x proximity;cursor:grab;scrollbar-width:none;-ms-overflow-style:none}
+.covers::-webkit-scrollbar{display:none}
+.covers.dragging{cursor:grabbing;scroll-snap-type:none}
+.cover{flex:0 0 clamp(210px,23vw,320px);aspect-ratio:3/4;position:relative;overflow:hidden;background:var(--cream);color:var(--warm);scroll-snap-align:start;user-select:none;transition:opacity .5s;box-shadow:inset 0 0 0 1px rgba(14,13,11,.06)}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:8% 50%;transform:scale(1.02);transition:transform 1.4s var(--ease);pointer-events:none}
+.cover:hover img{transform:scale(1.07)}
+.cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,13,11,.0) 55%,rgba(14,13,11,.82) 100%)}
+.cover .bottom{position:absolute;bottom:18px;inset-inline:18px;z-index:2;display:flex;align-items:flex-end;justify-content:space-between;gap:10px}
+.cover .no{font-family:var(--serif);font-size:clamp(48px,5vw,72px);line-height:.85;font-weight:300}
+.cover .season{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,243,236,.85);text-align:end;line-height:1.5}
+.cover.dim{opacity:.35}
+.archive .hint{padding-inline:var(--gutter);font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute);display:flex;align-items:center;gap:12px}
+.archive .hint i{width:40px;height:1px;background:var(--mute);display:block;opacity:.5}
+
+/* ---------- Newsletter ---------- */
+.news{background:var(--ink);color:var(--warm);position:relative;overflow:hidden}
+.news-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,120px);align-items:center}
+.news h2{font-size:clamp(44px,6.4vw,100px);line-height:.98;max-width:12ch}
+.news .copy{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.2vw,30px);line-height:1.3;color:rgba(247,243,236,.85)}
+.news form{margin-top:36px;display:grid;gap:14px}
+.news .field{display:flex;align-items:center;border-bottom:1px solid rgba(247,243,236,.35);transition:border-color .5s}
+.news .field:focus-within{border-color:var(--warm)}
+.news input{flex:1;background:none;border:0;color:var(--warm);font:inherit;font-size:18px;padding:14px 0;outline:none}
+.news input::placeholder{color:rgba(247,243,236,.45)}
+.news .btn{justify-self:start;margin-top:8px}
+.news .msg{font-size:13px;min-height:20px;color:rgba(247,243,236,.7)}
+.news .msg.ok{color:#d9c39a}
+.news .msg.err{color:#d98a92}
+.news .submit{margin-top:34px;padding-top:24px;border-top:1px solid var(--line-light);font-size:13px;color:rgba(247,243,236,.65);line-height:1.6}
+.news .submit a{color:var(--warm);border-bottom:1px solid rgba(247,243,236,.4)}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--ink);color:var(--warm);border-top:1px solid var(--line-light);padding:70px var(--gutter) 40px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px}
+.footer .brand{font-family:"Cormorant Garamond",serif;font-size:22px;letter-spacing:.28em;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.footer .brand svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.1}
+.footer .tagline{margin-top:16px;font-family:var(--serif);font-style:italic;font-size:20px;color:rgba(247,243,236,.75);max-width:34ch}
+.footer .col-title{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(247,243,236,.45);margin-bottom:16px}
+.footer ul{display:grid;gap:10px}
+.footer li a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;opacity:.75;transition:opacity .4s}
+.footer li a:hover{opacity:1}
+.footer .mail{font-family:var(--serif);font-size:20px;opacity:.9;text-transform:none;letter-spacing:0}
+.footer .mast{display:grid;gap:10px;font-size:12px;color:rgba(247,243,236,.7)}
+.footer .mast b{display:block;font-weight:400;font-family:var(--serif);font-size:17px;color:var(--warm);letter-spacing:0}
+.footer .mast span{font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:rgba(247,243,236,.45)}
+.footer-bottom{margin-top:56px;padding-top:24px;border-top:1px solid var(--line-light);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,243,236,.5)}
+
+/* ---------- Progress spiral ---------- */
+.progress{position:fixed;inset-inline-end:22px;bottom:22px;z-index:45;width:54px;height:54px;mix-blend-mode:difference;color:#fff;pointer-events:none;opacity:0;transition:opacity .8s}
+.progress.show{opacity:1}
+.progress svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.2}
+
+/* ---------- Genre strip ---------- */
+.strip{background:var(--ivory);border-bottom:1px solid var(--line)}
+.strip .wrap{display:flex;align-items:center;gap:clamp(18px,3vw,44px);padding-block:18px}
+.strip .lbl{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute);white-space:nowrap;flex:none}
+.flow-clip{flex:1;min-width:0;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.flow{display:flex;align-items:center;gap:clamp(22px,3vw,48px);width:max-content;animation:flow 60s linear infinite;will-change:transform}
+.flow.still{animation:none}
+.strip:hover .flow,.strip.paused .flow{animation-play-state:paused}
+@keyframes flow{to{transform:translateX(-50%)}}
+html[dir="rtl"] .flow{animation-name:flowRtl}
+@keyframes flowRtl{to{transform:translateX(50%)}}
+.strip a{font-family:var(--serif);font-size:clamp(20px,1.7vw,26px);white-space:nowrap;display:inline-flex;align-items:baseline;gap:8px;border-bottom:1px solid transparent;transition:border-color .4s,color .4s;padding-bottom:2px}
+.strip a .dot{width:7px;height:7px;border-radius:50%;background:var(--c,var(--wine));align-self:center;opacity:.8;flex:none;transition:transform .4s var(--ease)}
+.strip a:hover{border-color:var(--c,var(--wine));color:var(--c,var(--wine))}
+.strip a:hover .dot{transform:scale(1.35)}
+.strip a small{font-family:var(--sans);font-size:10px;letter-spacing:.12em;color:var(--mute)}
+/* ---------- Scroll cue ---------- */
+.scroll-cue{bottom:26px;gap:10px;text-align:center}
+.scroll-cue .cue-text{font-family:var(--serif);font-style:italic;font-size:clamp(18px,1.7vw,24px);letter-spacing:0;text-transform:none;color:rgba(247,243,236,.96);line-height:1.2}
+.scroll-cue .cue-small{font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:rgba(247,243,236,.7)}
+.scroll-cue i{height:60px;width:1px}
+.scroll-cue b{display:block;width:8px;height:8px;border:1px solid rgba(247,243,236,.9);transform:rotate(45deg);margin-top:-2px;animation:cueDot 2.6s var(--ease) infinite}
+@keyframes cueDot{0%,100%{transform:rotate(45deg) translate(0,0);opacity:.55}50%{transform:rotate(45deg) translate(4px,4px);opacity:1}}
+/* ---------- Nostalgic wheel ---------- */
+.wheel-sec{background:#e8dcc4;overflow:hidden;position:relative}
+.wheel-sec::before{content:"";position:absolute;inset:0;opacity:.35;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .22 0 0 0 0 .12 0 0 0 .18 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wheel-sec .wrap{position:relative}
+.wheel-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,90px);align-items:center}
+.wheel-copy h2{font-size:clamp(44px,6vw,96px);line-height:.95;margin-top:16px}
+.wheel-copy .lead{margin-top:20px;font-family:var(--serif);font-style:italic;font-size:clamp(20px,2vw,28px);line-height:1.3;color:var(--ink-2);max-width:28ch}
+.wheel-btns{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+.wheel-btns .btn[disabled]{opacity:.35;pointer-events:none}
+.ticker{margin-top:22px;min-height:2.6em;font-family:var(--serif);font-style:italic;font-size:clamp(19px,1.8vw,26px);line-height:1.25;color:var(--ink-2);max-width:30ch}
+.wheel-box{position:relative;aspect-ratio:1;max-width:560px;width:100%;margin-inline:auto;filter:drop-shadow(0 30px 40px rgba(43,29,21,.35))}
+.wheel-svg{width:100%;height:100%;overflow:visible;display:block}
+.rim{fill:none;stroke:#3f2a1f;stroke-width:16}
+.rim-hi{fill:none;stroke:#6b4a35;stroke-width:3;opacity:.7}
+.rim-line{fill:none;stroke:#b8925a;stroke-width:1.5;opacity:.9}
+.wedge{stroke:#3f2a1f;stroke-opacity:.35;stroke-width:1}
+.wedge.a{fill:#f1e7d2}.wedge.b{fill:#e5d7ba}.wedge.yr{fill:#d8c5a0}
+.rings circle{fill:none;stroke:#3f2a1f;stroke-opacity:.28;stroke-width:.8;stroke-dasharray:2 3}
+.wlabel{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:20px;letter-spacing:.12em;text-transform:uppercase;fill:#2b1d15}
+.wlabel.yr{font-size:22px;fill:#6e1f2a}
+html[dir="rtl"] .wlabel{letter-spacing:0;font-family:"Amiri",serif}
+#pegs circle{fill:url(#brass);stroke:#3f2a1f;stroke-width:.8}
+.hub-out{fill:#3f2a1f}
+.hub-spiral{fill:none;stroke:#2b1d15;stroke-width:1;opacity:.75}
+.hub-text{font-family:"Cormorant Garamond",serif;font-size:9.5px;letter-spacing:.32em;text-transform:uppercase;fill:#2b1d15;opacity:.8}
+.wheel-box{padding:2%;user-select:none;-webkit-user-select:none}
+.grab{cursor:grab;touch-action:none;pointer-events:all}
+.wheel-svg{touch-action:pan-y}
+.wheel-box.dragging .grab{cursor:grabbing}
+.wheel.free .grab{cursor:default}
+.handle .hit{fill:transparent;pointer-events:all}
+.handle .pill{fill:url(#brass);stroke:#3f2a1f;stroke-width:1.4;filter:url(#pshadow)}
+.handle .ptext{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:13.5px;letter-spacing:.16em;text-transform:uppercase;fill:#2b1d15;pointer-events:none}
+html[dir="rtl"] .handle .ptext{letter-spacing:0;font-family:"Amiri",serif;font-size:15px}
+.handle line{stroke:url(#brass);stroke-width:8;stroke-linecap:round}
+.handle .shadow{stroke:rgba(0,0,0,.35);stroke-width:10;stroke-linecap:round;transform:translate(1px,3px)}
+.handle circle{fill:url(#brass);stroke:#3f2a1f;stroke-width:1.2}
+.handle .knob{filter:url(#pshadow)}
+.handle .dot{fill:#3f2a1f;stroke:none}
+.hub-btn{position:absolute;left:50%;top:50%;width:19%;aspect-ratio:1;transform:translate(-50%,-50%) scale(.85);border-radius:50%;background:radial-gradient(circle at 35% 30%,#e6cb92,#b8925a 60%,#7d5f36);border:1.5px solid #3f2a1f;box-shadow:0 6px 14px rgba(0,0,0,.4),inset 0 1px 0 rgba(255,255,255,.35);font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(11px,1.15vw,15px);letter-spacing:.2em;text-transform:uppercase;color:#2b1d15;opacity:0;pointer-events:none;transition:opacity .5s var(--ease),transform .5s var(--ease);z-index:3;cursor:pointer}
+.wheel.free .hub-btn{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1)}
+.hub-btn:hover{background:radial-gradient(circle at 35% 30%,#f0d9a6,#c49f66 60%,#7d5f36)}
+.hub-btn:active{transform:translate(-50%,-50%) scale(.96)}
+html[dir="rtl"] .hub-btn{letter-spacing:0}
+.wheel-hint{margin-top:16px;text-align:center;font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+html[dir="rtl"] .wheel-hint{letter-spacing:0}
+.pointer{fill:url(#brass);stroke:#3f2a1f;stroke-width:1.2;transform-box:fill-box;transform-origin:50% 0}
+.pointer.tap{animation:ptap .16s ease-out}
+@keyframes ptap{40%{transform:rotate(-9deg)}100%{transform:rotate(0)}}
+.result{margin-top:34px;border-top:1px solid var(--line);padding-top:24px;opacity:0;transform:translateY(10px);transition:opacity .8s var(--ease),transform .8s var(--ease);visibility:hidden}
+.result.show{opacity:1;transform:none;visibility:visible}
+.result .eyebrow{color:var(--wine)}
+.result h3{font-size:clamp(26px,2.6vw,40px);margin-top:10px;line-height:1.08}
+.result .meta{margin-top:10px;font-family:var(--serif);font-style:italic;font-size:18px;color:var(--ink-2)}
+.result .btn{margin-top:18px}
+.today{margin-top:34px;padding:22px 24px;background:var(--ink);color:var(--warm);display:grid;gap:6px}
+.today[hidden]{display:none}
+.today .eyebrow{color:#d9c39a}
+.today h3{font-size:clamp(22px,2vw,30px);line-height:1.1}
+.today .meta{font-family:var(--serif);font-style:italic;font-size:16px;color:rgba(247,243,236,.75)}
+.today a.more{margin-top:8px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;color:var(--warm)}
+.today a.more::after{content:"";width:28px;height:1px;background:currentColor}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1439px){
+  .nav-links{display:none}
+  .burger{display:block}
+}
+@media (max-width:1200px){
+  .authors-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media (max-width:1000px){
+  .behind-grid{grid-template-columns:1fr}
+  .behind-copy{margin-inline-start:0}
+  .section-head{grid-template-columns:1fr}
+  .section-head .sub{text-align:start}
+  .card.c1{grid-column:1/13;grid-row:auto}
+  .card.c1 .frame{aspect-ratio:4/3.6}
+  .card.c2,.card.c4{grid-column:1/7;grid-row:auto}
+  .card.c3,.card.c5{grid-column:7/13;grid-row:auto}
+  .toc a{grid-template-columns:90px 1fr auto 22px}
+  .featured-inner{grid-template-columns:1fr}
+  .news-grid{grid-template-columns:1fr}
+  .wheel-grid{grid-template-columns:1fr}
+  .wheel-box{order:-1;max-width:min(460px,78vw)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:700px){
+  .authors-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:640px){
+  body{font-size:15px}
+  .nav{padding:16px var(--gutter)}
+  .wordmark{font-size:18px;letter-spacing:.26em}
+  .hero-title{letter-spacing:.14em;margin-inline-start:.14em;font-size:clamp(56px,17vw,96px)}
+  .hero-cta .btn{padding:14px 20px;font-size:10px}
+  .card.c2,.card.c3,.card.c4,.card.c5{grid-column:1/13}
+  .toc a{grid-template-columns:1fr;gap:6px}
+  .toc .arr{display:none}
+  .footer-grid{grid-template-columns:1fr}
+  .cats{min-height:auto}
+  .cats-bg{display:none}
+  .lang-menu{min-width:170px}
+  .cover{flex-basis:210px}
+}
+@media (max-width:480px){
+  .authors-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body class="no-js">
+<a class="skip" href="#issue" style="position:absolute;left:-9999px">Skip to content</a>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="wordmark" aria-label="Helezon">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-1 0a1 1 0 1 0 2 0a2 2 0 1 1 -4 0a3 3 0 1 0 6 0a4 4 0 1 1 -8 0a5 5 0 1 0 10 0a6 6 0 1 1 -12 0a7 7 0 1 0 14 0a8 8 0 1 1 -16 0a9 9 0 1 0 18 0"/></svg>
+    Helezon
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#top" data-i18n="nav.home">Home</a>
+    <a href="#issue" data-i18n="nav.latest">Latest Issue</a>
+    <a href="/yazilar/" data-i18n="nav.literature">Literature</a>
+    <a href="#poetry" data-i18n="nav.poetry">Poetry</a>
+    <a href="/tur/hikaye/" data-i18n="nav.stories">Stories</a>
+    <a href="/tur/deneme/" data-i18n="nav.essays">Essays</a>
+    <a href="/tur/sanat/" data-i18n="nav.art">Art</a>
+    <a href="/tur/ceviri/" data-i18n="nav.translation">Translation</a>
+    <a href="#authors" data-i18n="nav.authors">Authors</a>
+    <a href="#archive" data-i18n="nav.archive">Archive</a>
+    <a href="#about" data-i18n="nav.about">About</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang" id="lang">
+      <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false"><span id="langCode">TR</span><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4"/></svg></button>
+      <div class="lang-menu" id="langMenu" role="listbox">
+        <button data-lang="tr" role="option">Türkçe<small>TR</small></button>
+        <button data-lang="en" role="option">English<small>EN</small></button>
+        <button data-lang="de" role="option">Deutsch<small>DE</small></button>
+        <button data-lang="fr" role="option">Français<small>FR</small></button>
+        <button data-lang="ar" role="option">العربية<small>AR</small></button>
+        <button data-lang="es" role="option">Español<small>ES</small></button>
+        <button data-lang="ru" role="option">Русский<small>RU</small></button>
+      </div>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <ul>
+    <li><a href="#top" data-i18n="nav.home">Home</a></li>
+    <li><a href="#issue" data-i18n="nav.latest">Latest Issue</a></li>
+    <li><a href="#poetry" data-i18n="nav.poetry">Poetry</a></li>
+    <li><a href="/yazilar/" data-i18n="nav.literature">Literature</a></li>
+    <li><a href="#authors" data-i18n="nav.authors">Authors</a></li>
+    <li><a href="#archive" data-i18n="nav.archive">Archive</a></li>
+    <li><a href="/tefrika/" data-x="tefrika">Tefrika</a></li>
+    <li><a href="/hatira-defteri/" data-x="guestbook">Hatıra Defteri</a></li>
+    <li><a href="#about" data-i18n="nav.about">About</a></li>
+  </ul>
+  <div class="langs" id="menuLangs">
+    <button data-lang="tr">TR</button><button data-lang="en">EN</button><button data-lang="de">DE</button><button data-lang="fr">FR</button><button data-lang="ar">AR</button><button data-lang="es">ES</button><button data-lang="ru">RU</button>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="hero" aria-label="Helezon">
+  <div class="hero-media" id="heroMedia">
+    <img class="poster on" src="https://images.unsplash.com/photo-1490633874781-1c63cc424610?w=1800&q=70&auto=format" alt="" fetchpriority="high">
+    <video id="vidA" muted playsinline preload="none" aria-hidden="true"></video>
+    <video id="vidB" muted playsinline preload="none" aria-hidden="true"></video>
+  </div>
+  <div class="hero-grain"></div>
+  <div class="hero-inner">
+    <h1 class="hero-title" id="heroTitle" aria-label="Helezon"><span>H</span><span>E</span><span>L</span><span>E</span><span>Z</span><span>O</span><span>N</span></h1>
+    <p class="hero-sub" data-i18n="hero.sub">A journey through literature.</p>
+    <p class="hero-meta" data-i18n="hero.meta">Poetry · Stories · Essays · Art · Translation · Culture</p>
+    <div class="hero-cta">
+      <a class="btn solid" href="#issue" data-i18n="hero.cta1">Explore the latest issue</a>
+      <a class="btn" href="#featured" data-i18n="hero.cta2">Read stories</a>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#bolumler"><span class="cue-text" data-i18n="hero.cueText">Aşağı in, satır satır</span><span class="cue-small" data-i18n="hero.scroll">Kaydır</span><i></i><b></b></a>
+</section>
+
+<!-- ===== GENRE STRIP ===== -->
+<section class="strip" id="bolumler" aria-label="Bölümler">
+  <div class="wrap">
+    <span class="lbl" data-i18n="cat.sections">Bölümler</span>
+    <div class="flow-clip"><div class="flow" id="stripFlow">
+    <a class="reveal" href="/tur/siir/" style="--c:#6e1f2a"><i class="dot"></i><span data-i18n="cats.poetry">Şiir</span><small>266</small></a>
+    <a class="reveal" href="/tur/hikaye/" style="--c:#5b6b3e"><i class="dot"></i><span data-i18n="cats.stories">Hikâye</span><small>69</small></a>
+    <a class="reveal" href="/tur/deneme/" style="--c:#a8792a"><i class="dot"></i><span data-i18n="cats.essays">Deneme</span><small>68</small></a>
+    <a class="reveal" href="/tur/makale/" style="--c:#4a5a6a"><i class="dot"></i><span data-i18n="cat.article">Makale</span><small>42</small></a>
+    <a class="reveal" href="/tur/biyografi/" style="--c:#5a3b5e"><i class="dot"></i><span data-i18n="cats.biography">Biyografi</span><small>53</small></a>
+    <a class="reveal" href="/tur/ceviri/" style="--c:#2f5f5c"><i class="dot"></i><span data-i18n="cats.translation">Çeviri</span><small>58</small></a>
+    <a class="reveal" href="/tur/roportaj/" style="--c:#8a4a2a"><i class="dot"></i><span data-i18n="cat.interview">Röportaj</span><small>20</small></a>
+    <a class="reveal" href="/tur/sanat/" style="--c:#6f7f6a"><i class="dot"></i><span data-i18n="cats.art">Sanat</span><small>147</small></a>
+    <a class="reveal" href="/tur/editorden/" style="--c:#7a6a4a"><i class="dot"></i><span data-i18n="cat.editorial">Editörden</span><small>25</small></a>
+    <a class="reveal" href="/yazilar/" style="--c:#0e0d0b"><i class="dot"></i><span data-i18n="issue.allPieces">Tüm yazılar</span><small>767</small></a>
+    </div></div>
+  </div>
+</section>
+
+<!-- ===== WHEEL ===== -->
+<section class="section wheel-sec" id="cark">
+  <div class="wrap wheel-grid">
+    <div class="wheel-copy">
+      <p class="eyebrow reveal" data-i18n="wheel.eyebrow">Şans ve edebiyat</p>
+      <h2 class="reveal" data-i18n="wheel.title">Helezon'u çevir</h2>
+      <p class="lead reveal" data-i18n="wheel.copy">Şiir, hikâye, deneme, geçmiş sayılar… 767 yazı arasından bugün sana hangisi düşecek?</p>
+      <p class="ticker" id="wheelCur">…</p>
+      <div class="result" id="wheelResult" aria-live="polite">
+        <p class="eyebrow" data-i18n="wheel.result">Bugün sana düşen</p>
+        <h3 id="resTitle"></h3>
+        <p class="meta" id="resMeta"></p>
+        <a class="btn ink" id="resLink" href="#" data-i18n="issue.read">Oku</a>
+      </div>
+      <div class="today reveal" id="today" hidden>
+        <p class="eyebrow" data-i18n="wheel.today">Bugünün şiiri</p>
+        <h3 id="todayTitle"></h3>
+        <p class="meta" id="todayMeta"></p>
+        <a class="more" id="todayLink" href="#" data-i18n="issue.read">Oku</a>
+      </div>
+    </div>
+    <div class="wheel-box wheel reveal" id="wheel">
+      <svg class="wheel-svg" viewBox="0 0 600 600" aria-hidden="true">
+        <defs>
+          <filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .2 0 0 0 0 .15 0 0 0 0 .1 0 0 0 .5 0"/></filter>
+          <radialGradient id="vign" cx="50%" cy="50%" r="50%"><stop offset="62%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".22"/></radialGradient>
+          <radialGradient id="brass" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#e6cb92"/><stop offset=".6" stop-color="#b8925a"/><stop offset="1" stop-color="#7d5f36"/></radialGradient>
+          <clipPath id="wclip"><circle cx="300" cy="300" r="262"/></clipPath>
+          <filter id="pshadow" x="-40%" y="-40%" width="180%" height="180%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity=".4"/></filter>
+          <path id="hubRing" d="M300,300 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0"/>
+        </defs>
+        <circle class="rim" cx="300" cy="300" r="270"/>
+        <circle class="rim-hi" cx="300" cy="300" r="276"/>
+        <circle class="rim-line" cx="300" cy="300" r="262"/>
+        <g id="wheelRot" transform="rotate(0 300 300)">
+          <g id="wedges"></g>
+          <g class="rings"><circle cx="300" cy="300" r="236"/><circle cx="300" cy="300" r="72"/></g>
+          <g id="wedgeLabels"></g>
+          <g id="pegs"></g>
+          
+          <rect x="30" y="30" width="540" height="540" filter="url(#grain)" clip-path="url(#wclip)" opacity=".28"/>
+        </g>
+        <circle cx="300" cy="300" r="262" fill="url(#vign)" pointer-events="none"/>
+        <circle id="grabArea" class="grab" cx="300" cy="300" r="262" fill="transparent" data-lenis-prevent/>
+        <g class="hub"><circle cx="300" cy="300" r="64" class="hub-out"/><circle cx="300" cy="300" r="54" fill="url(#brass)"/><path id="hubSpiral" d="" class="hub-spiral"/><text class="hub-text"><textPath href="#hubRing" startOffset="6%">Helezon · MMXXI</textPath></text></g>
+        <path id="pointer" class="pointer" d="M287 12 h26 l-13 46 z" filter="url(#pshadow)"/>
+      </svg>
+      <button class="hub-btn" id="hubStop" type="button" data-i18n="wheel.stop">Durdur</button>
+      <p class="wheel-hint" data-i18n="wheel.drag">Kolu tut, çevir, bırak</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LATEST ISSUE ===== -->
+<!-- ===== CALENDAR LEAF + LAST YEARS ===== -->
+<section class="leaf-sec" id="takvim">
+  <div class="wrap leaf-grid">
+    <div class="leaf-stack reveal"></div>
+    <div class="leaf-copy">
+      <p class="eyebrow x-eyebrow reveal"><i></i><span data-x="leafTitle">Günün yaprağı</span></p>
+      <h2 class="reveal" data-x="leafTitle">Günün yaprağı</h2>
+      <p class="lead reveal" data-x="leafLead">Her sabah bir yaprak: tarih, bir dize, bir söz. Koparınca dünkü çıkar.</p>
+      <div class="leaf-actions reveal"><button class="btn ink" type="button" data-a="tear" data-x="tear">Yaprağı kopar</button><button class="btn ink" type="button" data-a="today" data-x="today" hidden>Bugün</button><button class="btn ink" type="button" data-a="share" data-x="share">Paylaş</button></div>
+      <div class="lastyears reveal"><p class="eyebrow" data-x="lastYears">Geçen yıllarda bu ay</p><ul class="toc" id="gecmisList"></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RADIO ===== -->
+<section class="radio-sec" id="radyo-sec">
+  <div class="wrap radio-grid">
+    <div class="radio-copy">
+      <p class="eyebrow x-eyebrow reveal"><i></i><span data-x="radio">Helezon Radyo</span></p>
+      <h2 class="reveal" data-x="radio">Helezon Radyo</h2>
+      <p class="lead reveal" data-x="radioLead">Kadranı çevir, bir türe ayarla. Parazit dinince o türden bir yazı okunmaya başlar.</p>
+      <p class="note reveal" data-x="voiceNote">Cihazın Türkçe sesiyle okunur</p>
+    </div>
+    <div class="radio reveal" id="radyo">
+      <div class="top"><span>Helezon</span><span data-x="tune">Kadran</span><span>MMXXI</span></div>
+      <div class="dial"><div class="ticks"></div><div class="scale"></div><div class="needle"></div><div class="glow"></div></div>
+      <input type="range" min="0" max="1000" value="0" aria-label="Kadran">
+      <div class="bottom"><div class="grille"></div><button class="power" type="button">AÇ</button></div>
+      <p class="now"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BEHIND THE WORDS / ABOUT ===== -->
+<section class="section behind" id="about">
+  <div class="wrap">
+    <div class="behind-grid">
+      <h2 class="reveal" data-i18n="behind.title">Behind the Words</h2>
+      <div class="behind-copy">
+        <p class="verse reveal" data-i18n="behind.l1">In the silence of a poem,</p>
+        <p class="verse reveal" data-i18n="behind.l2">between the lines of a story,</p>
+        <p class="verse reveal" data-i18n="behind.l3">in the trace left by a sentence...</p>
+        <div class="rule reveal"></div>
+        <p class="lead reveal" data-i18n="behind.p">Helezon brings different voices of literature together.</p>
+        <p class="about reveal" data-i18n="behind.about"></p>
+        <div class="facts reveal">
+          <span><b data-i18n="facts.since">Since 2021</b></span>
+          <span><b>59</b> <span data-i18n="facts.issues">issues</span></span>
+          <span data-i18n="facts.monthly">Monthly · Online</span>
+          <span>ISSN 2995-0953</span>
+        </div>
+      </div>
+    </div>
+    <figure class="behind-figure reveal">
+      <div class="frame"><img data-parallax src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=2000&q=75&auto=format" alt="" loading="lazy"></div>
+      <figcaption><span data-i18n="behind.cap">Where every sentence begins</span><span>Helezon · 2021 → 2026</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section issue" id="issue">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="issue-label reveal"><span class="rule"></span><span class="eyebrow" id="issueLabel">Sayı 59 · Eylül 2026</span></div>
+        <h2 class="reveal" data-i18n="issue.title">Latest Issue</h2>
+      </div>
+      <p class="sub reveal"><span data-i18n="issue.s1">New stories.</span><span data-i18n="issue.s2">New verses.</span><span data-i18n="issue.s3">New voices.</span></p>
+    </div>
+    <div class="grid" id="issueGrid"></div>
+  </div>
+</section>
+
+<!-- ===== FEATURED ===== -->
+<section class="featured" id="featured">
+  <div class="frame"><img data-parallax src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=2200&q=75&auto=format" alt="" loading="lazy"></div>
+  <div class="featured-inner">
+    <div>
+      <p class="eyebrow reveal"><i></i><span data-i18n="featured.label">Featured</span></p>
+      <h2 class="reveal"><span class="kicker">Kendi Cümleleriyle Var Olan Bir Öykücü:</span>Tomris Uyar</h2>
+    </div>
+    <div class="featured-desc">
+      <p class="verse reveal" data-i18n="featured.d1">More than a muse.</p>
+      <p class="verse reveal" data-i18n="featured.d2">With her own language, her own world and her own sentences,</p>
+      <p class="verse reveal" data-i18n="featured.d3">one of the unforgettable voices of Turkish short fiction.</p>
+      <p class="author reveal">Hızır İlyasoğlu · <span data-i18n="cats.biography">Biography</span></p>
+      <a class="btn reveal" href="/yazi/kendi-cumleleriyle-var-olan-bir-oykucu-tomris-uyar-hizir-ilyasoglu/" data-i18n="featured.cta">Read story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POETRY ===== -->
+<section class="section poetry" id="poetry">
+  <div class="wrap">
+    <p class="eyebrow reveal"><i></i><span data-i18n="poetry.eyebrow">From this issue</span></p>
+    <h2 class="reveal" data-i18n="poetry.title">The Voice of Poetry</h2>
+    <div class="verses" id="verses" lang="tr">
+      <p class="verse-line">Nicedir uzak düştüm yollarına,</p>
+      <p class="verse-line b">Hasretin serpilir rüyalarıma.</p>
+      <p class="verse-line">Erguvanlar Rumeli’yi kucaklarken</p>
+      <p class="verse-line b">İstanbul, beni de hatırla!</p>
+      <p class="verse-line">Çocukların şen sesleri yankılanır sokaklarda,</p>
+      <p class="verse-line">Güneş süzülür Kilyos’ta, Florya’da.</p>
+    </div>
+    <p class="attribution reveal"><i></i><span><span data-i18n="poetry.from">From the poem</span> <a href="/yazi/istanbul-beni-de-hatirla-zeynep-hafsa-dayi/">İstanbul, Beni de Hatırla!</a> · Zeynep Hafsa Dayı · <span data-i18n="poetry.issue">Issue 59</span></span></p>
+  </div>
+</section>
+
+<!-- ===== CATEGORIES ===== -->
+<section class="section cats" id="categories">
+  <div class="cats-bg" id="catsBg" aria-hidden="true">
+    <img data-cat="literature" src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1800&q=70&auto=format" alt="" loading="lazy">
+    <img data-cat="poetry" src="https://images.unsplash.com/photo-1519791883288-dc8bd696e667?w=1800&q=70&auto=format" alt="" loading="lazy">
+    <img data-cat="story" src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1800&q=70&auto=format" alt="" loading="lazy">
+    <img data-cat="essay" src="https://images.unsplash.com/photo-1471107340929-a87cd0f5b5f3?w=1800&q=70&auto=format" alt="" loading="lazy">
+    <img data-cat="biography" src="https://images.unsplash.com/photo-1474932430478-367dbb6832c1?w=1800&q=70&auto=format" alt="" loading="lazy">
+    <img data-cat="translation" src="https://images.unsplash.com/photo-1527838832700-5059252407fa?w=1800&q=70&auto=format" alt="" loading="lazy">
+    <img data-cat="art" src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=1800&q=70&auto=format" alt="" loading="lazy">
+  </div>
+  <div class="wrap">
+    <p class="eyebrow reveal" data-i18n="cats.eyebrow">Explore by form</p>
+    <ul class="cat-list" id="catList">
+      <li class="reveal"><a href="/tur/edebiyat/" data-cat="literature"><span data-i18n="cats.literature">Literature</span><small>643</small></a></li>
+      <li class="reveal"><a href="/tur/siir/" data-cat="poetry"><span data-i18n="cats.poetry">Poetry</span><small>266</small></a></li>
+      <li class="reveal"><a href="/tur/hikaye/" data-cat="story"><span data-i18n="cats.stories">Stories</span><small>69</small></a></li>
+      <li class="reveal"><a href="/tur/deneme/" data-cat="essay"><span data-i18n="cats.essays">Essays</span><small>68</small></a></li>
+      <li class="reveal"><a href="/tur/biyografi/" data-cat="biography"><span data-i18n="cats.biography">Biography</span><small>53</small></a></li>
+      <li class="reveal"><a href="/tur/ceviri/" data-cat="translation"><span data-i18n="cats.translation">Translation</span><small>58</small></a></li>
+      <li class="reveal"><a href="/tur/sanat/" data-cat="art"><span data-i18n="cats.art">Art</span><small>157</small></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== AUTHORS ===== -->
+<section class="section authors" id="authors">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="reveal" data-i18n="authors.title">Voices Behind the Words</h2>
+      <p class="sub reveal"><span data-i18n="authors.sub">Writers and editors of Helezon</span></p>
+    </div>
+    <div class="authors-grid" id="authorsGrid"></div>
+    <p class="authors-note reveal"><span data-i18n="authors.note">The full list of contributors lives on helezondergisi.com.</span><a href="/yazarlar/" data-i18n="authors.all">All writers</a></p>
+  </div>
+</section>
+
+<!-- ===== MANIFESTO ===== -->
+<section class="section manifesto" id="manifesto">
+  <svg class="spiral" id="bigSpiral" viewBox="0 0 400 400" aria-hidden="true"><path d=""/></svg>
+  <blockquote class="reveal">
+    <span data-i18n="manifesto.l1">“Some sentences are not simply read.</span>
+    <span data-i18n="manifesto.l2">They continue to live inside us.”</span>
+    <cite>Helezon</cite>
+  </blockquote>
+</section>
+
+<!-- ===== ARCHIVE ===== -->
+<section class="section archive" id="archive">
+  <div class="section-head">
+    <h2 class="reveal" data-i18n="archive.title">The Helezon Archive</h2>
+    <p class="sub reveal"><span data-i18n="archive.sub">Explore previous issues by year.</span></p>
+  </div>
+  <div class="years reveal" id="years">
+    <button data-year="all" class="active" data-i18n="archive.all">All</button>
+    <button data-year="2026">2026</button>
+    <button data-year="2025">2025</button>
+    <button data-year="2024">2024</button>
+    <button data-year="2023">2023</button>
+  </div>
+  <div class="covers reveal" id="covers"></div>
+  <p class="hint reveal"><i></i><span data-i18n="archive.drag">Drag to explore</span> · <a href="/arsiv/" data-i18n="archive.allIssues">All past issues</a></p>
+</section>
+
+<!-- ===== NEWSLETTER ===== -->
+<section class="section news" id="newsletter">
+  <div class="wrap news-grid">
+    <h2 class="reveal" data-i18n="news.title">Let new stories find you.</h2>
+    <div>
+      <p class="copy reveal" data-i18n="news.copy">Discover new issues, poems, stories and essays from Helezon.</p>
+      <form class="reveal" id="newsForm" novalidate>
+        <label class="field"><span style="position:absolute;left:-9999px" data-i18n="news.ph">Your email address</span><input type="email" id="email" name="email" data-i18n-ph="news.ph" placeholder="Your email address" autocomplete="email" required></label>
+        <p class="msg" id="newsMsg" aria-live="polite"></p>
+        <button class="btn wine" type="submit" data-i18n="news.btn">Join Helezon</button>
+      </form>
+      <p class="submit reveal"><span data-i18n="news.submit">Writers and artists: send your work to</span> <a href="mailto:helezoniletisim@gmail.com">helezoniletisim@gmail.com</a> <span data-i18n="news.submit2">as a Word file, up to 1200 words.</span></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12m-1 0a1 1 0 1 0 2 0a2 2 0 1 1 -4 0a3 3 0 1 0 6 0a4 4 0 1 1 -8 0a5 5 0 1 0 10 0a6 6 0 1 1 -12 0a7 7 0 1 0 14 0a8 8 0 1 1 -16 0a9 9 0 1 0 18 0"/></svg><span data-i18n="footer.brand">Helezon Magazine</span></div>
+        <p class="tagline" data-i18n="footer.tag">Following the paths of literature, art and ideas.</p>
+      </div>
+      <div>
+        <p class="col-title" data-i18n="footer.follow">Follow</p>
+        <ul>
+          <li><a href="https://www.instagram.com/helezon.dergisi/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://twitter.com/Helezondergi" target="_blank" rel="noopener">X · Twitter</a></li>
+          <li><a href="https://www.youtube.com/channel/UCrWbjIyCWuav28OnLglV_aw" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://helezondergisi.com" target="_blank" rel="noopener">helezondergisi.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="col-title" data-i18n="footer.explore">Explore</p>
+        <ul>
+          <li><a href="/tefrika/" data-x="tefrika">Tefrika</a></li>
+          <li><a href="/hatira-defteri/" data-x="guestbook">Hatıra Defteri</a></li>
+          <li><a href="/ayraclar/" data-x="bookmarks">Ayraçlarım</a></li>
+          <li><a href="mailto:helezoniletisim@gmail.com" data-i18n="footer.contact">Contact</a></li>
+          <li><a href="#about" data-i18n="nav.about">About</a></li>
+          <li><a href="#archive" data-i18n="nav.archive">Archive</a></li>
+          <li style="margin-top:12px"><a class="mail" href="mailto:helezoniletisim@gmail.com">helezoniletisim@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="col-title" data-i18n="footer.masthead">Masthead</p>
+        <div class="mast">
+          <div><span data-i18n="roles.chief">Editor-in-Chief</span><b>Erdal Karaman</b></div>
+          <div><span data-i18n="roles.editor">Editor</span><b>Seher Sağlam</b></div>
+          <div><span data-i18n="roles.managing">Managing Editor</span><b>Doğan Yücel</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Helezon Dergisi · ISSN 2995-0953</span>
+      <span>Paramus Publishing · Clifton, NJ</span>
+      <span data-i18n="footer.rights">All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="progress" id="progress" aria-hidden="true"><svg viewBox="0 0 60 60"><path id="progPath" d=""/></svg></div>
+
+<script src="/assets/extras.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script>
+/* =====================================================================
+   HELEZON — content pulled from helezondergisi.com (Issue 59, Sept 2026)
+   ===================================================================== */
+const SITE = 'https://helezondergisi.com/';
+const Y = '/yazi/';
+const ARTICLES = [
+ {k:'a1',t:'Kendi Cümleleriyle Var Olan Bir Öykücü: Tomris Uyar',a:'Hızır İlyasoğlu',c:'biography',u:Y+'kendi-cumleleriyle-var-olan-bir-oykucu-tomris-uyar-hizir-ilyasoglu/',img:'https://helezondergisi.com/wp-content/uploads/2026/09/biyografi-tomris-uyar-1024x640.png',ex:'Tomris Uyar, Türk öykücülüğünün en güçlü kalemlerinden biri olmasının yanı sıra, zarafeti, entelektüel derinliği ve özgür ruhuyla İkinci Yeni şiirinin büyük şairlerine ilham veren bir öykü yazarıdır.',tt:{en:'A Storyteller Who Exists Through Her Own Words: Tomris Uyar',de:'Eine Erzählerin, die durch ihre eigenen Worte existiert: Tomris Uyar',fr:'Une conteuse qui existe par ses propres mots : Tomris Uyar',ar:'قاصّة توجد بكلماتها هي: تومريس أويار',es:'Una narradora que existe a través de sus propias palabras: Tomris Uyar',ru:'Рассказчица, существующая в собственных словах: Томрис Уяр'}},
+ {k:'a2',t:'One Trick Pony',a:'Ferit Can',c:'essay',u:Y+'one-trick-pony-ferit-can/',img:'https://helezondergisi.com/wp-content/uploads/2026/09/deneme-one-trick-1024x640.png',ex:'Paul Simon’ın “One Trick Pony” diye bir şarkısı var. İngilizcede “Tek numarası olan midilli” demek…'},
+ {k:'a3',t:'ҮМҮТ ЖАНА ЖАЛБЫРАК',a:'Айгүл Тоголокова · Aygül Togolokova',c:'translation',u:Y+'p357966-umut-jana-jalbyrak/',img:'https://helezondergisi.com/wp-content/uploads/2026/09/ceviri-siir-umut-ve-yaprak-1024x640.png',tr:'İbrahim Türkhan',tt:{tr:'Umut ve Yaprak',en:'Hope and the Leaf',de:'Die Hoffnung und das Blatt',fr:'L’espoir et la feuille',ar:'الأمل والورقة',es:'La esperanza y la hoja',ru:'Надежда и лист'}},
+ {k:'a4',t:'Mahrumiyetin Çocukları',a:'Eyüp Karadağ',c:'story',u:Y+'mahrumiyetin-cocuklari-eyup-karadag/',img:'https://helezondergisi.com/wp-content/uploads/2026/09/hikaye-mahrumiyetin-cocuklari-1024x640.png',ex:'Sarı saçları irsî değil, uzun yaz günlerini güneş altında geçirmesinin sonucuydu.',tt:{en:'Children of Deprivation',de:'Kinder der Entbehrung',fr:'Les enfants du dénuement',ar:'أبناء الحرمان',es:'Los hijos de la carencia',ru:'Дети лишений'}},
+ {k:'a5',t:'Bir Yüzük Kadar Küçük, Bir Ömür Kadar Büyük',a:'Metin Güneş',c:'essay',u:Y+'bir-yuzuk-kadar-kucuk-bir-omur-kadar-buyuk-metin-gunes/',img:'https://helezondergisi.com/wp-content/uploads/2026/09/deneme-bir-yuzuk-kadar-1024x640.png',ex:'Hayatımızdaki en büyük yolculuklar, çoğu zaman fark edilmeyecek kadar küçük bir başlangıca sahiptir.',tt:{en:'As Small as a Ring, As Great as a Lifetime',de:'So klein wie ein Ring, so groß wie ein Leben',fr:'Petit comme une bague, grand comme une vie',ar:'صغير كخاتم، كبير كعمر',es:'Tan pequeño como un anillo, tan grande como una vida',ru:'Маленький, как кольцо, большой, как жизнь'}},
+ {k:'a6',t:'Kaderin Selam Bahçesinden',a:'Ziya Paşa Akyürek',c:'poetry',u:Y+'kaderin-selam-bahcesinden-ziya-pasa-akyurek/',img:'https://helezondergisi.com/wp-content/uploads/2026/09/siir-kaderin-selam-bahcesi-1024x640.png',tt:{en:'From the Garden of Fate’s Greeting',de:'Aus dem Garten des Schicksalsgrußes',fr:'Du jardin du salut du destin',ar:'من حديقة تحية القدر',es:'Del jardín del saludo del destino',ru:'Из сада приветствия судьбы'}},
+ {k:'a7',t:'Eylül',a:'Tahsîn-i Kelâm',c:'poetry',u:Y+'eylul-tahsin-i-kelam/'},
+ {k:'a8',t:'Kelimelerin Ne Suçu Var?',a:'Erdal Karaman',c:'article',u:Y+'kelimelerin-ne-sucu-var-erdal-karaman/'},
+ {k:'a9',t:'İstanbul, Beni de Hatırla!',a:'Zeynep Hafsa Dayı',c:'poetry',u:Y+'istanbul-beni-de-hatirla-zeynep-hafsa-dayi/'},
+ {k:'a10',t:'Divan Şairlerinin Meslekleri',a:'Seher Sağlam',c:'article',u:Y+'divan-sairlerinin-meslekleri-seher-saglam/'},
+ {k:'a11',t:'Güz Ayazı',a:'Doğan Tavürün',c:'poetry',u:Y+'guz-ayazi-dogan-tavurun/'},
+ {k:'a12',t:'Yudum',a:'Sena Özden',c:'photo',u:Y+'yudum-sena-ozden/'}
+];
+
+/* Writers listed on helezondergisi.com/yazarlar — roles from the masthead (Künye) */
+const AUTHORS = [
+ {n:'Erdal Karaman',s:'erdalkaraman',r:'chief',lead:true,p:{t:'Kelimelerin Ne Suçu Var?',u:Y+'kelimelerin-ne-sucu-var-erdal-karaman/'}},
+ {n:'Seher Sağlam',s:'sehersaglam',r:'editor',lead:true,p:{t:'Divan Şairlerinin Meslekleri',u:Y+'divan-sairlerinin-meslekleri-seher-saglam/'}},
+ {n:'Doğan Yücel',s:'doganyucel',r:'managing',p:{t:'Dil ve Medeniyet',u:Y+'dil-ve-medeniyet-dogan-yucel/'}},
+ {n:'Hızır İlyasoğlu',s:'hizirilyasoglu',r:'writer',p:{t:'Kendi Cümleleriyle Var Olan Bir Öykücü: Tomris Uyar',u:Y+'kendi-cumleleriyle-var-olan-bir-oykucu-tomris-uyar-hizir-ilyasoglu/'}},
+ {n:'Tahsin-i Kelam',s:'tahsinikelam',r:'board',p:{t:'Eylül',u:Y+'eylul-tahsin-i-kelam/'}},
+ {n:'İbrahim Türkhan',s:'ibrahimturkhan',r:'board',p:{t:'Kırgız Şair ve Edebiyat Araştırmacısı: Omor Sooronov',u:'/yazar/ibrahimturkhan/'}},
+ {n:'Durdu Ozan',s:'durduozan',r:'board',p:{t:'İğde Kokusu',u:Y+'igde-kokusu-durdu-ozan/'}},
+ {n:'Emre Ozan',s:'emreozan',r:'board',p:{t:'Sıcak, Çok Sıcak!',u:Y+'sicak-cok-sicak-emre-ozan/'}},
+ {n:'Semih Yılmaz',s:'semihyilmaz',r:'board',p:{t:'İç Sesin İzinde Bir Anlatı: “Bu Hikâye Tutar Canan”',u:'/yazar/semihyilmaz/'}},
+ {n:'Feride Akdağ',s:'ferideakdag',r:'design'},
+ {n:'elif e.ö',s:null,r:'design'},
+ {n:'Aslan Gümüş',s:'aslangumus',r:'writer'},
+ {n:'Ayşe Beçene',s:'aysebecene',r:'writer'},
+ {n:'Ayşegül Akdaş',s:'aysegulakdas',r:'writer'},
+ {n:'Elif Altıntaş',s:'elifaltintas',r:'writer'},
+ {n:'Emily Yaramış',s:'emilyyaramis',r:'writer'},
+ {n:'Emin Osman Uygur',s:'euygur',r:'writer'},
+ {n:'Meryem Tunca',s:'meryemtunca',r:'writer'},
+ {n:'Talha Erçevikbaş',s:'talhaercevikbas',r:'writer'},
+ {n:'Zebunniso Asrorova',s:'zebunnisoasrorova',r:'writer'},
+ {n:'Helezon Editor',s:'admin',r:'desk'}
+];
+
+/* Issue posters from helezondergisi.com (issue numbers follow the monthly sequence: no. 59 = Sept 2026) */
+const COVERS = [
+  {n:59,y:2026,m:9,img:"https://helezondergisi.com/wp-content/uploads/2026/09/1-10-1024x640.png",url:"/sayi/59/"},
+  {n:58,y:2026,m:8,img:"https://helezondergisi.com/wp-content/uploads/2026/08/Kapak-_-58-agustos-2026-web-helezon-1024x640.png",url:"/sayi/58/"},
+  {n:57,y:2026,m:7,img:"https://helezondergisi.com/wp-content/uploads/2026/07/IMG-20260702-WA0026-1024x640.jpg",url:"/sayi/57/"},
+  {n:56,y:2026,m:6,img:"https://helezondergisi.com/wp-content/uploads/2026/06/55-haziran-2026-web-helezon-1-1024x640.png",url:"/sayi/56/"},
+  {n:55,y:2026,m:5,img:"https://helezondergisi.com/wp-content/uploads/2026/05/kapak-6-1024x640.png",url:"/sayi/55/"},
+  {n:54,y:2026,m:4,img:"https://helezondergisi.com/wp-content/uploads/2026/04/Helezon-Dergisi-Web-Nisan-54.-Sayi-kapak--1024x640.png",url:"/sayi/54/"},
+  {n:53,y:2026,m:3,img:"https://helezondergisi.com/wp-content/uploads/2026/03/1-6-1024x640.png",url:"/sayi/53/"},
+  {n:52,y:2026,m:2,img:"https://helezondergisi.com/wp-content/uploads/2026/02/helezon-52-subat-kapak-2026-web1-1024x640.png",url:"/sayi/52/"},
+  {n:51,y:2026,m:1,img:"https://helezondergisi.com/wp-content/uploads/2026/01/kapak-ocak-2026-1024x640.png",url:"/sayi/51/"},
+  {n:50,y:2025,m:12,img:"https://helezondergisi.com/wp-content/uploads/2025/12/kapakk-1024x576.png",url:"/sayi/50/"},
+  {n:49,y:2025,m:11,img:"https://helezondergisi.com/wp-content/uploads/2025/11/Kapak-5-1024x576.png",url:"/sayi/49/"},
+  {n:48,y:2025,m:10,img:"https://helezondergisi.com/wp-content/uploads/2025/10/1-4-1024x640.png",url:"/sayi/48/"},
+  {n:47,y:2025,m:9,img:"https://helezondergisi.com/wp-content/uploads/2025/09/46-eylul-2025-helezon-web-1024x640.png",url:"/sayi/47/"},
+  {n:46,y:2025,m:8,img:"https://helezondergisi.com/wp-content/uploads/2025/08/1-3-1024x640.png",url:"/sayi/46/"},
+  {n:45,y:2025,m:7,img:"https://helezondergisi.com/wp-content/uploads/2025/07/1-2-1024x640.png",url:"/sayi/45/"},
+  {n:44,y:2025,m:6,img:"https://helezondergisi.com/wp-content/uploads/2025/06/helezon-44-web-haziran-2025-kapak-1024x640.png",url:"/sayi/44/"},
+  {n:43,y:2025,m:5,img:"https://helezondergisi.com/wp-content/uploads/2025/05/helezon-mayis-2025-1024x640.png",url:"/sayi/43/"},
+  {n:42,y:2025,m:4,img:"https://helezondergisi.com/wp-content/uploads/2025/04/helezon-42-web-nisan-2025-Kopyasi-1024x640.png",url:"/sayi/42/"},
+  {n:41,y:2025,m:3,img:"https://helezondergisi.com/wp-content/uploads/2025/03/helezon-41-web-mart-2025-2-1024x640.png",url:"/sayi/41/"},
+  {n:40,y:2025,m:2,img:"https://helezondergisi.com/wp-content/uploads/2025/02/helezon-40-web-subat-2025-1024x640.png",url:"/sayi/40/"},
+  {n:39,y:2025,m:1,img:"https://helezondergisi.com/wp-content/uploads/2025/01/1-1-1024x640.png",url:"/sayi/39/"},
+  {n:38,y:2024,m:12,img:"https://helezondergisi.com/wp-content/uploads/2024/12/helezon-38-web-1-1024x640.png",url:"/sayi/38/"},
+  {n:37,y:2024,m:11,img:"https://helezondergisi.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-01-at-12.01.07-1024x640.jpeg",url:"/sayi/37/"},
+  {n:26,y:2023,m:12,img:"https://helezondergisi.com/wp-content/uploads/2023/11/helezon-web-aralik-1024x640.png",url:"/sayi/26/"}
+];
+
+/* =====================================================================
+   i18n — 7 languages
+   ===================================================================== */
+const I18N = {
+tr:{
+ nav:{home:"Ana Sayfa",latest:"Son Sayı",literature:"Edebiyat",poetry:"Şiir",stories:"Öykü",essays:"Deneme",art:"Sanat",translation:"Çeviri",authors:"Yazarlar",archive:"Arşiv",about:"Hakkında"},
+ hero:{sub:"Edebiyatın içinden bir yolculuk.",meta:"Şiir · Öykü · Deneme · Sanat · Çeviri · Kültür",cta1:"Son sayıyı keşfet",cta2:"Öyküleri oku",scroll:"Kaydır",cueText:"Aşağı in, satır satır"},
+ behind:{title:"Sözcüklerin Ardında",l1:"Bir şiirin sessizliğinde,",l2:"bir öykünün satır aralarında,",l3:"bir cümlenin bıraktığı izde...",p:"Helezon, edebiyatın farklı seslerini bir araya getiriyor.",about:"Helezon; sarmal, kıvrımlı biçim demektir: âdeta saat zembereği gibi gittikçe daralan iç içe daireler, dönen ve döndükçe ilerleyen bir çizgi. Böyle bir imajla yola çıkan Helezon, sanat ve edebiyatla ilgili, okumayı ve yazmayı seven herkesi ortak bir platformda buluşturmayı amaçlayan çevrim içi bir edebiyat, kültür ve sanat dergisidir.",cap:"Her cümlenin başladığı yer"},
+ facts:{since:"2021'den beri",issues:"sayı",monthly:"Aylık · Çevrim içi"},
+ issue:{title:"Son Sayı",s1:"Yeni öyküler.",s2:"Yeni dizeler.",s3:"Yeni sesler.",read:"Oku",no:"Sayı",also:"Bu sayıda ayrıca",transBy:"Çeviren",fullIssue:"59. sayının tamamı",allPieces:"Tüm yazılar · 2021'den beri"},
+ cat:{biography:"Biyografi",essay:"Deneme",translation:"Çeviri",story:"Hikâye",poetry:"Şiir",article:"Makale",photo:"Fotoğraf",interview:"Röportaj",art:"Sanat",editorial:"Editörden",sections:"Bölümler"},
+ wheel:{"eyebrow":"Şans ve edebiyat","title":"Helezon'u çevir","copy":"Şiir, hikâye, deneme, geçmiş sayılar… 767 yazı arasından bugün sana hangisi düşecek?","spin":"Çevir","stop":"Durdur","again":"Tekrar çevir","result":"Bugün sana düşen","today":"Bugünün şiiri","past":"Geçmiş sayılar","hint":"Çarkı tut, çevir, bırak","drag":"Çarkı tut, çevir, bırak","grab":"Tut"},
+ featured:{label:"Öne çıkan",d1:"Bir ilham perisinden fazlası.",d2:"Kendi diliyle, kendi dünyasıyla ve kendi cümleleriyle,",d3:"Türk öykücülüğünün unutulmaz seslerinden biri.",cta:"Yazıyı oku"},
+ poetry:{eyebrow:"Bu sayıdan",title:"Şiirin Sesi",from:"Şiirden",issue:"59. Sayı"},
+ cats:{eyebrow:"Türlere göre keşfet",literature:"Edebiyat",poetry:"Şiir",stories:"Hikâye",essays:"Deneme",biography:"Biyografi",translation:"Çeviri",art:"Sanat"},
+ authors:{title:"Sözcüklerin Ardındaki Sesler",sub:"Helezon'un yazarları ve editörleri",latest:"Son yazısı",view:"Yazıları görüntüle",note:"Yazarların tam listesi helezondergisi.com'da.",all:"Tüm yazarlar"},
+ roles:{chief:"Yayın Yönetmeni",editor:"Editör",managing:"Yazı İşleri",design:"Görsel Tasarım ve Sosyal Medya",board:"Yayın Kurulu",desk:"Editörlük",writer:"Yazar"},
+ manifesto:{l1:"“Bazı cümleler yalnızca okunmaz.",l2:"İçimizde yaşamaya devam eder.”"},
+ archive:{title:"Helezon Arşivi",sub:"Geçmiş sayıları yıla göre keşfedin.",all:"Tümü",issue:"Sayı",drag:"Keşfetmek için sürükleyin",allIssues:"Tüm geçmiş sayılar"},
+ months:["Ocak","Şubat","Mart","Nisan","Mayıs","Haziran","Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık"],
+ news:{title:"Yeni öyküler sizi bulsun.",copy:"Helezon'dan yeni sayıları, şiirleri, öyküleri ve denemeleri keşfedin.",ph:"E-posta adresiniz",btn:"Helezon'a katıl",ok:"Helezon'a hoş geldiniz. Yeni öyküler yakında sizi bulacak.",err:"Lütfen geçerli bir e-posta adresi girin.",submit:"Yazarlar ve sanatçılar: eserlerinizi",submit2:"adresine Word dosyası olarak, en fazla 1200 kelime ile gönderebilirsiniz."},
+ footer:{brand:"Helezon Dergisi",tag:"Edebiyatın, sanatın ve düşüncenin izinde.",follow:"Takip et",explore:"Keşfet",masthead:"Künye",contact:"İletişim",rights:"Tüm hakları saklıdır."}
+},
+en:{
+ nav:{home:"Home",latest:"Latest Issue",literature:"Literature",poetry:"Poetry",stories:"Stories",essays:"Essays",art:"Art",translation:"Translation",authors:"Authors",archive:"Archive",about:"About"},
+ hero:{sub:"A journey through literature.",meta:"Poetry · Stories · Essays · Art · Translation · Culture",cta1:"Explore the latest issue",cta2:"Read stories",scroll:"Scroll",cueText:"Scroll down, line by line"},
+ behind:{title:"Behind the Words",l1:"In the silence of a poem,",l2:"between the lines of a story,",l3:"in the trace left by a sentence...",p:"Helezon brings different voices of literature together.",about:"Helezon means a spiral: circles turning inward like a watch spring, a line that advances as it turns. Under that image, Helezon is an online literature, culture and art magazine that brings together everyone who loves reading and writing.",cap:"Where every sentence begins"},
+ facts:{since:"Since 2021",issues:"issues",monthly:"Monthly · Online"},
+ issue:{title:"Latest Issue",s1:"New stories.",s2:"New verses.",s3:"New voices.",read:"Read",no:"Issue",also:"Also in this issue",transBy:"Translated by",fullIssue:"The full issue 59",allPieces:"All pieces · since 2021"},
+ cat:{biography:"Biography",essay:"Essay",translation:"Translation",story:"Story",poetry:"Poetry",article:"Article",photo:"Photography",interview:"Interview",art:"Art",editorial:"Editorial",sections:"Sections"},
+ wheel:{"eyebrow":"Chance and literature","title":"Spin the Helezon","copy":"Poems, stories, essays, past issues… which of 767 pieces will fall to you today?","spin":"Spin","stop":"Stop","again":"Spin again","result":"Today's draw for you","today":"Poem of the day","past":"Past issues","hint":"Grab the wheel, spin, let go","drag":"Grab the wheel, spin, let go","grab":"Grab"},
+ featured:{label:"Featured",d1:"More than a muse.",d2:"With her own language, her own world and her own sentences,",d3:"one of the unforgettable voices of Turkish short fiction.",cta:"Read story"},
+ poetry:{eyebrow:"From this issue",title:"The Voice of Poetry",from:"From the poem",issue:"Issue 59"},
+ cats:{eyebrow:"Explore by form",literature:"Literature",poetry:"Poetry",stories:"Stories",essays:"Essays",biography:"Biography",translation:"Translation",art:"Art"},
+ authors:{title:"Voices Behind the Words",sub:"Writers and editors of Helezon",latest:"Latest piece",view:"View articles",note:"The full list of contributors lives on helezondergisi.com.",all:"All writers"},
+ roles:{chief:"Editor-in-Chief",editor:"Editor",managing:"Managing Editor",design:"Visual Design & Social Media",board:"Editorial Board",desk:"Editorial Desk",writer:"Writer"},
+ manifesto:{l1:"“Some sentences are not simply read.",l2:"They continue to live inside us.”"},
+ archive:{title:"The Helezon Archive",sub:"Explore previous issues by year.",all:"All",issue:"Issue",drag:"Drag to explore",allIssues:"All past issues"},
+ months:["January","February","March","April","May","June","July","August","September","October","November","December"],
+ news:{title:"Let new stories find you.",copy:"Discover new issues, poems, stories and essays from Helezon.",ph:"Your email address",btn:"Join Helezon",ok:"Welcome to Helezon. New stories will find you soon.",err:"Please enter a valid email address.",submit:"Writers and artists: send your work to",submit2:"as a Word file, up to 1,200 words."},
+ footer:{brand:"Helezon Magazine",tag:"Following the paths of literature, art and ideas.",follow:"Follow",explore:"Explore",masthead:"Masthead",contact:"Contact",rights:"All rights reserved."}
+},
+de:{
+ nav:{home:"Start",latest:"Aktuelle Ausgabe",literature:"Literatur",poetry:"Lyrik",stories:"Erzählungen",essays:"Essays",art:"Kunst",translation:"Übersetzung",authors:"Autor:innen",archive:"Archiv",about:"Über uns"},
+ hero:{sub:"Eine Reise durch die Literatur.",meta:"Lyrik · Erzählungen · Essays · Kunst · Übersetzung · Kultur",cta1:"Aktuelle Ausgabe entdecken",cta2:"Erzählungen lesen",scroll:"Scrollen",cueText:"Weiter nach unten, Zeile für Zeile"},
+ behind:{title:"Hinter den Worten",l1:"In der Stille eines Gedichts,",l2:"zwischen den Zeilen einer Erzählung,",l3:"in der Spur, die ein Satz hinterlässt...",p:"Helezon bringt die verschiedenen Stimmen der Literatur zusammen.",about:"Helezon bedeutet Spirale: Kreise, die sich wie eine Uhrfeder nach innen winden, eine Linie, die sich drehend voranbewegt. Unter diesem Bild ist Helezon ein Online-Magazin für Literatur, Kultur und Kunst, das alle zusammenbringt, die lesen und schreiben lieben.",cap:"Wo jeder Satz beginnt"},
+ facts:{since:"Seit 2021",issues:"Ausgaben",monthly:"Monatlich · Online"},
+ issue:{title:"Aktuelle Ausgabe",s1:"Neue Erzählungen.",s2:"Neue Verse.",s3:"Neue Stimmen.",read:"Lesen",no:"Ausgabe",also:"Außerdem in dieser Ausgabe",transBy:"Übersetzt von",fullIssue:"Die ganze Ausgabe 59",allPieces:"Alle Texte · seit 2021"},
+ cat:{biography:"Biografie",essay:"Essay",translation:"Übersetzung",story:"Erzählung",poetry:"Lyrik",article:"Artikel",photo:"Fotografie",interview:"Interview",art:"Kunst",editorial:"Editorial",sections:"Rubriken"},
+ wheel:{"eyebrow":"Zufall und Literatur","title":"Dreh die Helezon","copy":"Gedichte, Erzählungen, Essays, frühere Ausgaben… welcher von 767 Texten fällt heute dir zu?","spin":"Drehen","stop":"Stopp","again":"Noch einmal","result":"Heute für dich gezogen","today":"Gedicht des Tages","past":"Frühere Ausgaben","hint":"Rad fassen, drehen, loslassen","drag":"Rad fassen, drehen, loslassen","grab":"Greifen"},
+ featured:{label:"Im Fokus",d1:"Mehr als eine Muse.",d2:"Mit ihrer eigenen Sprache, ihrer eigenen Welt und ihren eigenen Sätzen,",d3:"eine der unvergesslichen Stimmen der türkischen Kurzprosa.",cta:"Text lesen"},
+ poetry:{eyebrow:"Aus dieser Ausgabe",title:"Die Stimme der Lyrik",from:"Aus dem Gedicht",issue:"Ausgabe 59"},
+ cats:{eyebrow:"Nach Gattung entdecken",literature:"Literatur",poetry:"Lyrik",stories:"Erzählungen",essays:"Essays",biography:"Biografie",translation:"Übersetzung",art:"Kunst"},
+ authors:{title:"Stimmen hinter den Worten",sub:"Autor:innen und Redaktion von Helezon",latest:"Neuester Beitrag",view:"Beiträge ansehen",note:"Die vollständige Liste der Autor:innen findet sich auf helezondergisi.com.",all:"Alle Autor:innen"},
+ roles:{chief:"Chefredaktion",editor:"Redaktion",managing:"Textredaktion",design:"Visuelles Design & Social Media",board:"Redaktionsbeirat",desk:"Redaktion",writer:"Autor:in"},
+ manifesto:{l1:"„Manche Sätze werden nicht nur gelesen.",l2:"Sie leben in uns weiter.“"},
+ archive:{title:"Das Helezon-Archiv",sub:"Frühere Ausgaben nach Jahr entdecken.",all:"Alle",issue:"Ausgabe",drag:"Zum Entdecken ziehen",allIssues:"Alle früheren Ausgaben"},
+ months:["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember"],
+ news:{title:"Lass neue Geschichten dich finden.",copy:"Entdecke neue Ausgaben, Gedichte, Erzählungen und Essays von Helezon.",ph:"Deine E-Mail-Adresse",btn:"Helezon beitreten",ok:"Willkommen bei Helezon. Neue Geschichten finden dich bald.",err:"Bitte gib eine gültige E-Mail-Adresse ein.",submit:"Autor:innen und Künstler:innen: Sendet eure Texte an",submit2:"als Word-Datei, bis zu 1.200 Wörter."},
+ footer:{brand:"Helezon Magazin",tag:"Auf den Wegen der Literatur, der Kunst und der Ideen.",follow:"Folgen",explore:"Entdecken",masthead:"Impressum",contact:"Kontakt",rights:"Alle Rechte vorbehalten."}
+},
+fr:{
+ nav:{home:"Accueil",latest:"Dernier numéro",literature:"Littérature",poetry:"Poésie",stories:"Nouvelles",essays:"Essais",art:"Art",translation:"Traduction",authors:"Auteurs",archive:"Archives",about:"À propos"},
+ hero:{sub:"Un voyage à travers la littérature.",meta:"Poésie · Nouvelles · Essais · Art · Traduction · Culture",cta1:"Découvrir le dernier numéro",cta2:"Lire les nouvelles",scroll:"Défiler",cueText:"Descendez, ligne après ligne"},
+ behind:{title:"Derrière les mots",l1:"Dans le silence d’un poème,",l2:"entre les lignes d’une nouvelle,",l3:"dans la trace laissée par une phrase...",p:"Helezon réunit les différentes voix de la littérature.",about:"Helezon signifie spirale : des cercles qui se resserrent comme un ressort de montre, une ligne qui avance en tournant. Sous cette image, Helezon est une revue en ligne de littérature, de culture et d’art qui réunit tous ceux qui aiment lire et écrire.",cap:"Là où chaque phrase commence"},
+ facts:{since:"Depuis 2021",issues:"numéros",monthly:"Mensuel · En ligne"},
+ issue:{title:"Dernier numéro",s1:"Nouvelles histoires.",s2:"Nouveaux vers.",s3:"Nouvelles voix.",read:"Lire",no:"Numéro",also:"Également dans ce numéro",transBy:"Traduit par",fullIssue:"Le numéro 59 en entier",allPieces:"Tous les textes · depuis 2021"},
+ cat:{biography:"Biographie",essay:"Essai",translation:"Traduction",story:"Nouvelle",poetry:"Poésie",article:"Article",photo:"Photographie",interview:"Entretien",art:"Art",editorial:"Éditorial",sections:"Rubriques"},
+ wheel:{"eyebrow":"Hasard et littérature","title":"Faites tourner la Helezon","copy":"Poèmes, nouvelles, essais, anciens numéros… lequel des 767 textes vous reviendra aujourd'hui ?","spin":"Tourner","stop":"Stop","again":"Encore une fois","result":"Ce qui vous revient aujourd'hui","today":"Le poème du jour","past":"Anciens numéros","hint":"Saisissez la roue, tournez, lâchez","drag":"Saisissez la roue, tournez, lâchez","grab":"Saisir"},
+ featured:{label:"À la une",d1:"Plus qu’une muse.",d2:"Avec sa propre langue, son propre monde et ses propres phrases,",d3:"l’une des voix inoubliables de la nouvelle turque.",cta:"Lire l’article"},
+ poetry:{eyebrow:"Dans ce numéro",title:"La voix de la poésie",from:"Extrait du poème",issue:"Numéro 59"},
+ cats:{eyebrow:"Explorer par genre",literature:"Littérature",poetry:"Poésie",stories:"Nouvelles",essays:"Essais",biography:"Biographie",translation:"Traduction",art:"Art"},
+ authors:{title:"Les voix derrière les mots",sub:"Auteurs et rédaction de Helezon",latest:"Dernier texte",view:"Voir les articles",note:"La liste complète des auteurs se trouve sur helezondergisi.com.",all:"Tous les auteurs"},
+ roles:{chief:"Direction de la publication",editor:"Rédaction en chef",managing:"Secrétariat de rédaction",design:"Design visuel & réseaux sociaux",board:"Comité de rédaction",desk:"Rédaction",writer:"Auteur·e"},
+ manifesto:{l1:"« Certaines phrases ne se lisent pas seulement.",l2:"Elles continuent de vivre en nous. »"},
+ archive:{title:"Les archives Helezon",sub:"Explorez les numéros précédents par année.",all:"Tous",issue:"Numéro",drag:"Faites glisser pour explorer",allIssues:"Tous les anciens numéros"},
+ months:["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],
+ news:{title:"Laissez les nouvelles histoires vous trouver.",copy:"Découvrez les nouveaux numéros, poèmes, nouvelles et essais de Helezon.",ph:"Votre adresse e-mail",btn:"Rejoindre Helezon",ok:"Bienvenue chez Helezon. De nouvelles histoires vous trouveront bientôt.",err:"Veuillez saisir une adresse e-mail valide.",submit:"Auteurs et artistes : envoyez vos textes à",submit2:"au format Word, 1 200 mots maximum."},
+ footer:{brand:"Helezon Magazine",tag:"Sur les chemins de la littérature, de l’art et des idées.",follow:"Suivre",explore:"Explorer",masthead:"Ours",contact:"Contact",rights:"Tous droits réservés."}
+},
+ar:{
+ nav:{home:"الرئيسية",latest:"العدد الأخير",literature:"الأدب",poetry:"الشعر",stories:"القصص",essays:"المقالات",art:"الفن",translation:"الترجمة",authors:"الكتّاب",archive:"الأرشيف",about:"عن المجلة"},
+ hero:{sub:"رحلة عبر الأدب.",meta:"شعر · قصص · مقالات · فن · ترجمة · ثقافة",cta1:"اكتشف العدد الأخير",cta2:"اقرأ القصص",scroll:"مرّر",cueText:"انزل، سطرًا سطرًا"},
+ behind:{title:"خلف الكلمات",l1:"في صمت قصيدة،",l2:"بين سطور قصة،",l3:"في الأثر الذي تتركه جملة...",p:"هليزون تجمع أصوات الأدب المختلفة معًا.",about:"هليزون تعني الحلزون: دوائر تلتف إلى الداخل كزنبرك الساعة، وخط يتقدم كلما دار. تحت هذه الصورة، هليزون مجلة إلكترونية للأدب والثقافة والفن تجمع كل من يحب القراءة والكتابة.",cap:"حيث تبدأ كل جملة"},
+ facts:{since:"منذ 2021",issues:"عددًا",monthly:"شهرية · إلكترونية"},
+ issue:{title:"العدد الأخير",s1:"قصص جديدة.",s2:"أبيات جديدة.",s3:"أصوات جديدة.",read:"اقرأ",no:"العدد",also:"في هذا العدد أيضًا",transBy:"ترجمة",fullIssue:"العدد 59 كاملًا",allPieces:"كل النصوص · منذ 2021"},
+ cat:{biography:"سيرة",essay:"مقال أدبي",translation:"ترجمة",story:"قصة",poetry:"شعر",article:"مقالة",photo:"تصوير",interview:"حوار",art:"فن",editorial:"كلمة التحرير",sections:"الأقسام"},
+ wheel:{"eyebrow":"الحظ والأدب","title":"أدِر الهليزون","copy":"قصائد وقصص ومقالات وأعداد سابقة… أي نص من بين 767 سيكون من نصيبك اليوم؟","spin":"أدِر","stop":"قف","again":"أدِر مجددًا","result":"من نصيبك اليوم","today":"قصيدة اليوم","past":"أعداد سابقة","hint":"أمسك العجلة، أدِر، اترك","drag":"أمسك العجلة، أدِر، اترك","grab":"أمسك"},
+ featured:{label:"مختارات",d1:"أكثر من مُلهِمة.",d2:"بلغتها وعالمها وجملها الخاصة،",d3:"واحدة من الأصوات التي لا تُنسى في القصة التركية القصيرة.",cta:"اقرأ النص"},
+ poetry:{eyebrow:"من هذا العدد",title:"صوت الشعر",from:"من قصيدة",issue:"العدد 59"},
+ cats:{eyebrow:"استكشف حسب النوع",literature:"الأدب",poetry:"الشعر",stories:"القصص",essays:"المقالات",biography:"السيرة",translation:"الترجمة",art:"الفن"},
+ authors:{title:"الأصوات خلف الكلمات",sub:"كتّاب هليزون ومحرروها",latest:"آخر نص",view:"عرض المقالات",note:"القائمة الكاملة للكتّاب على helezondergisi.com.",all:"جميع الكتّاب"},
+ roles:{chief:"إدارة التحرير",editor:"التحرير",managing:"سكرتارية التحرير",design:"التصميم البصري ووسائل التواصل",board:"هيئة التحرير",desk:"فريق التحرير",writer:"كاتب/ة"},
+ manifesto:{l1:"«بعض الجمل لا تُقرأ فحسب.",l2:"بل تواصل الحياة في داخلنا.»"},
+ archive:{title:"أرشيف هليزون",sub:"استكشف الأعداد السابقة حسب السنة.",all:"الكل",issue:"العدد",drag:"اسحب للاستكشاف",allIssues:"كل الأعداد السابقة"},
+ months:["يناير","فبراير","مارس","أبريل","مايو","يونيو","يوليو","أغسطس","سبتمبر","أكتوبر","نوفمبر","ديسمبر"],
+ news:{title:"دع القصص الجديدة تجدك.",copy:"اكتشف الأعداد والقصائد والقصص والمقالات الجديدة من هليزون.",ph:"بريدك الإلكتروني",btn:"انضم إلى هليزون",ok:"أهلًا بك في هليزون. ستجدك القصص الجديدة قريبًا.",err:"يرجى إدخال بريد إلكتروني صالح.",submit:"للكتّاب والفنانين: أرسلوا أعمالكم إلى",submit2:"بصيغة Word، بحد أقصى 1200 كلمة."},
+ footer:{brand:"مجلة هليزون",tag:"على دروب الأدب والفن والأفكار.",follow:"تابعنا",explore:"استكشف",masthead:"هيئة التحرير",contact:"تواصل",rights:"جميع الحقوق محفوظة."}
+},
+es:{
+ nav:{home:"Inicio",latest:"Último número",literature:"Literatura",poetry:"Poesía",stories:"Relatos",essays:"Ensayos",art:"Arte",translation:"Traducción",authors:"Autores",archive:"Archivo",about:"Acerca de"},
+ hero:{sub:"Un viaje a través de la literatura.",meta:"Poesía · Relatos · Ensayos · Arte · Traducción · Cultura",cta1:"Explorar el último número",cta2:"Leer relatos",scroll:"Desplázate",cueText:"Baja, línea a línea"},
+ behind:{title:"Detrás de las palabras",l1:"En el silencio de un poema,",l2:"entre las líneas de un relato,",l3:"en la huella que deja una frase...",p:"Helezon reúne las distintas voces de la literatura.",about:"Helezon significa espiral: círculos que se cierran hacia dentro como el muelle de un reloj, una línea que avanza mientras gira. Bajo esa imagen, Helezon es una revista en línea de literatura, cultura y arte que reúne a quienes aman leer y escribir.",cap:"Donde empieza cada frase"},
+ facts:{since:"Desde 2021",issues:"números",monthly:"Mensual · En línea"},
+ issue:{title:"Último número",s1:"Nuevos relatos.",s2:"Nuevos versos.",s3:"Nuevas voces.",read:"Leer",no:"Número",also:"También en este número",transBy:"Traducido por",fullIssue:"El número 59 completo",allPieces:"Todos los textos · desde 2021"},
+ cat:{biography:"Biografía",essay:"Ensayo",translation:"Traducción",story:"Relato",poetry:"Poesía",article:"Artículo",photo:"Fotografía",interview:"Entrevista",art:"Arte",editorial:"Editorial",sections:"Secciones"},
+ wheel:{"eyebrow":"Azar y literatura","title":"Gira la Helezon","copy":"Poemas, relatos, ensayos, números pasados… ¿cuál de los 767 textos te tocará hoy?","spin":"Girar","stop":"Parar","again":"Girar de nuevo","result":"Lo que te toca hoy","today":"El poema del día","past":"Números pasados","hint":"Agarra la rueda, gira, suelta","drag":"Agarra la rueda, gira, suelta","grab":"Agarra"},
+ featured:{label:"Destacado",d1:"Más que una musa.",d2:"Con su propia lengua, su propio mundo y sus propias frases,",d3:"una de las voces inolvidables del cuento turco.",cta:"Leer el texto"},
+ poetry:{eyebrow:"De este número",title:"La voz de la poesía",from:"Del poema",issue:"Número 59"},
+ cats:{eyebrow:"Explorar por género",literature:"Literatura",poetry:"Poesía",stories:"Relatos",essays:"Ensayos",biography:"Biografía",translation:"Traducción",art:"Arte"},
+ authors:{title:"Voces detrás de las palabras",sub:"Autores y editores de Helezon",latest:"Último texto",view:"Ver artículos",note:"La lista completa de autores está en helezondergisi.com.",all:"Todos los autores"},
+ roles:{chief:"Dirección editorial",editor:"Edición",managing:"Redacción",design:"Diseño visual y redes sociales",board:"Consejo editorial",desk:"Equipo editorial",writer:"Autor/a"},
+ manifesto:{l1:"«Algunas frases no solo se leen.",l2:"Siguen viviendo dentro de nosotros.»"},
+ archive:{title:"El archivo de Helezon",sub:"Explora los números anteriores por año.",all:"Todos",issue:"Número",drag:"Arrastra para explorar",allIssues:"Todos los números anteriores"},
+ months:["enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],
+ news:{title:"Deja que las nuevas historias te encuentren.",copy:"Descubre nuevos números, poemas, relatos y ensayos de Helezon.",ph:"Tu correo electrónico",btn:"Únete a Helezon",ok:"Bienvenido a Helezon. Pronto te encontrarán nuevas historias.",err:"Introduce un correo electrónico válido.",submit:"Autores y artistas: envíen sus obras a",submit2:"en formato Word, hasta 1200 palabras."},
+ footer:{brand:"Revista Helezon",tag:"Siguiendo los caminos de la literatura, el arte y las ideas.",follow:"Seguir",explore:"Explorar",masthead:"Equipo",contact:"Contacto",rights:"Todos los derechos reservados."}
+},
+ru:{
+ nav:{home:"Главная",latest:"Последний номер",literature:"Литература",poetry:"Поэзия",stories:"Рассказы",essays:"Эссе",art:"Искусство",translation:"Перевод",authors:"Авторы",archive:"Архив",about:"О журнале"},
+ hero:{sub:"Путешествие сквозь литературу.",meta:"Поэзия · Рассказы · Эссе · Искусство · Перевод · Культура",cta1:"Открыть последний номер",cta2:"Читать рассказы",scroll:"Листайте",cueText:"Листайте вниз, строка за строкой"},
+ behind:{title:"За словами",l1:"В тишине стихотворения,",l2:"между строк рассказа,",l3:"в следе, оставленном фразой...",p:"Helezon объединяет разные голоса литературы.",about:"Helezon означает спираль: круги, сужающиеся внутрь, как пружина часов, линия, что движется вперёд, пока вращается. Под этим образом Helezon — онлайн-журнал литературы, культуры и искусства, объединяющий всех, кто любит читать и писать.",cap:"Там, где начинается каждая фраза"},
+ facts:{since:"С 2021 года",issues:"номеров",monthly:"Ежемесячно · Онлайн"},
+ issue:{title:"Последний номер",s1:"Новые рассказы.",s2:"Новые строки.",s3:"Новые голоса.",read:"Читать",no:"Номер",also:"Также в этом номере",transBy:"Перевод",fullIssue:"Весь номер 59",allPieces:"Все тексты · с 2021 года"},
+ cat:{biography:"Биография",essay:"Эссе",translation:"Перевод",story:"Рассказ",poetry:"Поэзия",article:"Статья",photo:"Фотография",interview:"Интервью",art:"Искусство",editorial:"От редакции",sections:"Разделы"},
+ wheel:{"eyebrow":"Случай и литература","title":"Крутите Helezon","copy":"Стихи, рассказы, эссе, прошлые номера… какой из 767 текстов выпадет вам сегодня?","spin":"Крутить","stop":"Стоп","again":"Ещё раз","result":"Выпало вам сегодня","today":"Стихотворение дня","past":"Прошлые номера","hint":"Возьмитесь за колесо, крутите, отпустите","drag":"Возьмитесь за колесо, крутите, отпустите","grab":"Держи"},
+ featured:{label:"Главное",d1:"Больше, чем муза.",d2:"Со своим языком, своим миром и своими фразами —",d3:"один из незабываемых голосов турецкого рассказа.",cta:"Читать текст"},
+ poetry:{eyebrow:"Из этого номера",title:"Голос поэзии",from:"Из стихотворения",issue:"Номер 59"},
+ cats:{eyebrow:"Выбрать по жанру",literature:"Литература",poetry:"Поэзия",stories:"Рассказы",essays:"Эссе",biography:"Биография",translation:"Перевод",art:"Искусство"},
+ authors:{title:"Голоса за словами",sub:"Авторы и редакция Helezon",latest:"Последний текст",view:"Смотреть публикации",note:"Полный список авторов — на helezondergisi.com.",all:"Все авторы"},
+ roles:{chief:"Главный редактор",editor:"Редактор",managing:"Ответственный секретарь",design:"Визуальный дизайн и соцсети",board:"Редакционный совет",desk:"Редакция",writer:"Автор"},
+ manifesto:{l1:"«Некоторые фразы не просто читают.",l2:"Они продолжают жить в нас.»"},
+ archive:{title:"Архив Helezon",sub:"Изучайте прошлые номера по годам.",all:"Все",issue:"Номер",drag:"Потяните, чтобы листать",allIssues:"Все прошлые номера"},
+ months:["январь","февраль","март","апрель","май","июнь","июль","август","сентябрь","октябрь","ноябрь","декабрь"],
+ news:{title:"Пусть новые истории найдут вас.",copy:"Открывайте новые номера, стихи, рассказы и эссе Helezon.",ph:"Ваш электронный адрес",btn:"Присоединиться к Helezon",ok:"Добро пожаловать в Helezon. Новые истории скоро найдут вас.",err:"Введите корректный электронный адрес.",submit:"Авторы и художники: присылайте работы на",submit2:"в формате Word, до 1200 слов."},
+ footer:{brand:"Журнал Helezon",tag:"По дорогам литературы, искусства и идей.",follow:"Подписаться",explore:"Разделы",masthead:"Редакция",contact:"Контакты",rights:"Все права защищены."}
+}
+};
+const get = (obj, path) => path.split('.').reduce((o,k)=> (o && o[k]!==undefined) ? o[k] : undefined, obj);
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+document.body.classList.remove('no-js');
+const reduced = new URLSearchParams(location.search).get('motion') === 'off';
+if (reduced) document.body.classList.add('reduced');
+
+/* ---------- renderers ---------- */
+let current = 'en';
+function altTitle(a, d){ if (!a.tt) return ''; const v = current === 'tr' ? a.tt.tr : (a.tt[current] || a.tt.en); return v && v !== a.t ? `<span class="alt">${esc(v)}</span>` : ''; }
+function cardHTML(a, cls, d){
+  const trLine = a.tr ? `<div class="card-meta"><span>${esc(d.issue.transBy)}: ${esc(a.tr)}</span></div>` : '';
+  const img = a.img ? `<a class="frame" href="${a.u}" aria-hidden="true" tabindex="-1"><img src="${a.img}" alt="" loading="lazy"></a>` : '';
+  const ex = a.ex ? `<p class="ex">${esc(a.ex)}</p>` : '';
+  return `<article class="card ${cls} reveal">${img}
+    <div class="card-meta"><span class="tag">${esc(d.cat[a.c])}</span></div>
+    <h3><a href="${a.u}">${esc(a.t)}${altTitle(a,d)}</a></h3>
+    <div class="card-meta"><span class="by">${esc(a.a)}</span></div>${trLine}${ex}
+    <a href="${a.u}" class="more">${esc(d.issue.read)}</a>
+  </article>`;
+}
+function renderIssue(){
+  const d = I18N[current], A = ARTICLES;
+  const a5 = A[4];
+  const c5 = `<article class="card c5 reveal">
+    <div><div class="quote-mark">“</div><div class="card-meta"><span class="tag">${esc(d.cat[a5.c])}</span></div>
+      <h3><a href="${a5.u}">${esc(a5.t)}${altTitle(a5,d)}</a></h3>
+      <p class="ex" style="margin-top:14px">${esc(a5.ex)}</p></div>
+    <div><div class="card-meta" style="margin-bottom:18px"><span class="by">${esc(a5.a)}</span></div>
+      <a href="${a5.u}" class="more">${esc(d.issue.read)}</a></div>
+  </article>`;
+  const toc = `<div class="toc reveal"><p class="eyebrow">${esc(d.issue.also)}</p><ol>` +
+    A.slice(5).map(a => `<li><a href="${a.u}"><span class="tag">${esc(d.cat[a.c])}</span><span class="t">${esc(a.t)}${a.tt ? ' <em style="color:var(--mute);font-size:.7em">· '+esc(current==='tr'?a.tt.tr||'':(a.tt[current]||a.tt.en))+'</em>' : ''}</span><span class="by">${esc(a.a)}</span><i class="arr"></i></a></li>`).join('') +
+    `<li><a href="/sayi/59/"><span class="tag">→</span><span class="t" style="font-style:italic">${esc(d.issue.fullIssue)}</span><span class="by"></span><i class="arr"></i></a></li><li><a href="/yazilar/"><span class="tag">→</span><span class="t" style="font-style:italic">${esc(d.issue.allPieces)}</span><span class="by">778</span><i class="arr"></i></a></li></ol></div>`;
+  document.getElementById('issueGrid').innerHTML = cardHTML(A[0],'c1',d) + cardHTML(A[1],'c2',d) + cardHTML(A[2],'c3',d) + cardHTML(A[3],'c4',d) + c5 + toc;
+  document.getElementById('issueLabel').textContent = `${d.issue.no} 59 · ${d.months[8]} 2026`;
+}
+function initials(n){ const parts = n.replace(/[.·]/g,' ').trim().split(/\s+/).filter(Boolean); return parts.length > 1 ? (parts[0][0] + parts[parts.length-1][0]).toUpperCase() : parts[0].slice(0,2).toUpperCase(); }
+function renderAuthors(){
+  const d = I18N[current];
+  document.getElementById('authorsGrid').innerHTML = AUTHORS.map(a => {
+    const mark = a.n.split(/\s+/).slice(-1)[0][0].toUpperCase();
+    const piece = a.p ? `<div class="label">${esc(d.authors.latest)}</div><div class="piece">${esc(a.p.t)}</div>` : '';
+    return `<figure class="author reveal${a.lead ? ' lead' : ''}${a.p ? '' : ' nopiece'}" tabindex="0">
+      <span class="mark" aria-hidden="true">${mark}</span><div class="veil"></div>
+      <span class="mono">${initials(a.n)}</span>
+      <figcaption class="body"><div class="name">${esc(a.n)}</div><div class="role">${esc(d.roles[a.r])}</div></figcaption>
+      <div class="info">${piece}<a href="${a.s ? '/yazar/' + a.s + '/' : '/yazarlar/'}">${esc(d.authors.view)}</a></div>
+    </figure>`;
+  }).join('');
+}
+function renderCovers(){
+  const d = I18N[current];
+  document.getElementById('covers').innerHTML = COVERS.map(c => `
+    <a class="cover" data-year="${c.y}" href="${c.url}" aria-label="${esc(d.archive.issue)} ${c.n}">
+      <img src="${c.img}" alt="" loading="lazy" draggable="false">
+      <div class="bottom"><div class="no">${String(c.n).padStart(2,'0')}</div><div class="season">${esc(d.archive.issue)} ${c.n}<br>${esc(d.months[c.m-1])} ${c.y}</div></div>
+    </a>`).join('');
+}
+
+/* ---------- i18n ---------- */
+function detectLang(){
+  try{ const s = localStorage.getItem('helezon-lang'); if (s && I18N[s]) return s; }catch(e){}
+  const nav = (navigator.languages || [navigator.language || 'tr']).map(l => l.slice(0,2).toLowerCase());
+  return nav.find(l => I18N[l]) || 'tr';
+}
+function applyLang(lang){
+  if(!I18N[lang]) lang = 'tr';
+  current = lang;
+  const d = I18N[lang];
+  document.documentElement.lang = lang;
+  document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+  document.querySelectorAll('[data-i18n]').forEach(el => { const v = get(d, el.dataset.i18n); if (typeof v === 'string') el.textContent = v; });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => { const v = get(d, el.dataset.i18nPh); if (v) el.placeholder = v; });
+  document.getElementById('langCode').textContent = lang.toUpperCase();
+  document.querySelectorAll('[data-lang]').forEach(b => b.classList.toggle('active', b.dataset.lang === lang));
+  document.title = `Helezon Dergisi — ${d.hero.sub}`;
+  renderIssue(); renderAuthors(); renderCovers(); if (window.__renderWheel) window.__renderWheel();
+  try{ localStorage.setItem('helezon-lang', lang); }catch(e){}
+  if (window.ScrollTrigger){ requestAnimationFrame(() => { ScrollTrigger.refresh(); revealVisible(); }); }
+}
+/* elements rendered after the first batch need their own reveal */
+function revealVisible(){
+  if (!window.gsap) return;
+  const els = gsap.utils.toArray('.reveal').filter(el => !el.dataset.revealed);
+  if (!els.length) return;
+  if (reduced){ gsap.set(els, { opacity: 1, y: 0 }); els.forEach(el => el.dataset.revealed = 1); return; }
+  ScrollTrigger.batch(els, { start: 'top 90%', once: true, onEnter: batch => { gsap.to(batch, { opacity: 1, y: 0, duration: 1.2, ease: 'power3.out', stagger: .07, overwrite: true }); } });
+  els.forEach(el => el.dataset.revealed = 1);
+}
+applyLang(detectLang());
+
+/* language dropdown */
+const langBox = document.getElementById('lang'), langBtn = document.getElementById('langBtn');
+langBtn.addEventListener('click', e => { e.stopPropagation(); const open = langBox.classList.toggle('open'); langBtn.setAttribute('aria-expanded', open); });
+document.addEventListener('click', () => langBox.classList.remove('open'));
+document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', e => { e.stopPropagation(); applyLang(b.dataset.lang); langBox.classList.remove('open'); closeMenu(); }));
+
+/* ---------- mobile menu ---------- */
+const burger = document.getElementById('burger');
+function closeMenu(){ document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded','false'); document.getElementById('menu').setAttribute('aria-hidden','true'); if (window.lenis) lenis.start(); }
+burger.addEventListener('click', () => {
+  const open = document.body.classList.toggle('menu-open');
+  burger.setAttribute('aria-expanded', open); document.getElementById('menu').setAttribute('aria-hidden', !open);
+  if (window.lenis) open ? lenis.stop() : lenis.start();
+});
+document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', closeMenu));
+
+/* ---------- smooth scroll (Lenis) + GSAP ---------- */
+let lenis = null;
+if (window.gsap && window.ScrollTrigger){
+  gsap.registerPlugin(ScrollTrigger);
+  if (!reduced && window.Lenis){
+    lenis = new Lenis({ lerp: 0.085, smoothWheel: true, wheelMultiplier: .95 });
+    window.lenis = lenis;
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(t => lenis.raf(t * 1000));
+    gsap.ticker.lagSmoothing(0);
+  }
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a[href^="#"]'); if (!a) return;
+    const id = a.getAttribute('href'); if (id.length < 2) return;
+    const target = document.querySelector(id); if (!target) return;
+    e.preventDefault();
+    if (lenis) lenis.scrollTo(target, { offset: 0, duration: 1.6 }); else target.scrollIntoView({ behavior: 'smooth' });
+  });
+  const nav = document.getElementById('nav');
+  ScrollTrigger.create({ start: 'top -70%', end: 99999, onUpdate: s => nav.classList.toggle('solid', s.scroll() > window.innerHeight * .7) });
+  ScrollTrigger.create({ start: 'top -20%', onToggle: s => document.getElementById('progress').classList.toggle('show', s.isActive) });
+
+  if (!reduced){
+    const tl = gsap.timeline({ defaults: { ease: 'power3.out' }, delay: .2 });
+    tl.to('#heroTitle span', { opacity: 1, y: 0, duration: 1.4, stagger: .08 })
+      .to('.hero-sub', { opacity: 1, duration: 1.2 }, '-=.8')
+      .to('.hero-meta', { opacity: 1, duration: 1 }, '-=.8')
+      .to('.hero-cta', { opacity: 1, duration: 1 }, '-=.7')
+      .to('.scroll-cue', { opacity: 1, duration: 1 }, '-=.6')
+      .from('.nav', { opacity: 0, y: -10, duration: 1 }, '-=1.2');
+    gsap.to('.hero-inner', { yPercent: -18, opacity: .2, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+    revealVisible();
+    gsap.utils.toArray('[data-parallax]').forEach(img => {
+      gsap.fromTo(img, { yPercent: -9 }, { yPercent: 9, ease: 'none', scrollTrigger: { trigger: img.parentElement, start: 'top bottom', end: 'bottom top', scrub: true } });
+    });
+    gsap.utils.toArray('.verse-line').forEach(line => {
+      gsap.to(line, { opacity: 1, y: 0, ease: 'none', scrollTrigger: { trigger: line, start: 'top 85%', end: 'top 52%', scrub: .6 } });
+    });
+    gsap.to('#bigSpiral', { rotate: 40, ease: 'none', scrollTrigger: { trigger: '.manifesto', start: 'top bottom', end: 'bottom top', scrub: 1.5 } });
+  } else {
+    gsap.set('#heroTitle span, .hero-sub, .hero-meta, .hero-cta, .scroll-cue, .reveal, .verse-line', { opacity: 1, y: 0, clearProps: 'transform' });
+  }
+}
+
+/* ---------- Spirals (signature) ---------- */
+function spiralPath(cx, cy, turns, maxR, steps){
+  let d = ''; const total = turns * Math.PI * 2;
+  for (let i = 0; i <= steps; i++){ const t = (i / steps) * total; const r = (i / steps) * maxR; d += (i ? ' L' : 'M') + (cx + r * Math.cos(t)).toFixed(2) + ' ' + (cy + r * Math.sin(t)).toFixed(2); }
+  return d;
+}
+document.querySelector('#bigSpiral path').setAttribute('d', spiralPath(200, 200, 9, 190, 900));
+const prog = document.getElementById('progPath');
+prog.setAttribute('d', spiralPath(30, 30, 4.5, 26, 400));
+const progLen = prog.getTotalLength();
+prog.style.strokeDasharray = progLen; prog.style.strokeDashoffset = progLen;
+function updateProgress(){ const h = document.documentElement.scrollHeight - window.innerHeight; const p = h > 0 ? Math.min(1, Math.max(0, window.scrollY / h)) : 0; prog.style.strokeDashoffset = progLen * (1 - p); }
+if (lenis) lenis.on('scroll', updateProgress); else window.addEventListener('scroll', updateProgress, { passive: true });
+updateProgress();
+
+/* ---------- Hero video montage (crossfade) ---------- */
+(function(){
+  const clips = [
+    'https://videos.pexels.com/video-files/39494117/16824290_1280_720_25fps.mp4',
+    'https://videos.pexels.com/video-files/6979935/6979935-hd_1280_720_25fps.mp4',
+    'https://videos.pexels.com/video-files/37078511/15707587_1280_720_50fps.mp4',
+    'https://videos.pexels.com/video-files/5900627/5900627-hd_1366_720_30fps.mp4',
+    'https://videos.pexels.com/video-files/13661114/13661114-hd_1280_720_30fps.mp4',
+    'https://videos.pexels.com/video-files/5283816/5283816-hd_1366_720_24fps.mp4'
+  ];
+  if (navigator.connection && navigator.connection.saveData) return;
+  const poster = document.querySelector('.hero-media .poster');
+  let a = document.getElementById('vidA'), b = document.getElementById('vidB');
+  let idx = 0, switching = false; const HOLD = 9;
+  function load(v, src){ return new Promise((res, rej) => { v.src = src; v.preload = 'auto'; v.load(); const ok = () => { cleanup(); res(); }, bad = () => { cleanup(); rej(); }; const cleanup = () => { v.removeEventListener('canplaythrough', ok); v.removeEventListener('error', bad); }; v.addEventListener('canplaythrough', ok, { once: true }); v.addEventListener('error', bad, { once: true }); setTimeout(bad, 20000); }); }
+  async function start(){
+    try { await load(a, clips[0]); await a.play(); a.classList.add('on'); poster.classList.remove('on'); }
+    catch(e){ if (clips.length > 1) { clips.shift(); return start(); } return; }
+    tick();
+  }
+  function tick(){ if (switching) return; const t = a.currentTime, dur = isFinite(a.duration) ? a.duration : HOLD; if (t >= Math.min(HOLD, dur - 1.2)) next(); else requestAnimationFrame(tick); }
+  async function next(){
+    switching = true; const nextIdx = (idx + 1) % clips.length;
+    try { await load(b, clips[nextIdx]); await b.play(); }
+    catch(e){ idx = nextIdx; switching = false; a.currentTime = 0; a.play(); return tick(); }
+    b.classList.add('on'); a.classList.remove('on');
+    setTimeout(() => { a.pause(); a.removeAttribute('src'); a.load(); const tmp = a; a = b; b = tmp; idx = nextIdx; switching = false; tick(); }, 1900);
+  }
+  document.addEventListener('visibilitychange', () => { if (document.hidden) a.pause(); else a.play().catch(()=>{}); });
+  if ('requestIdleCallback' in window) requestIdleCallback(start, { timeout: 1500 }); else setTimeout(start, 300);
+})();
+
+/* ---------- Nostalgic wheel of chance (hand-spun, hub stop) ---------- */
+(function(){
+  var box = document.getElementById('wheel'); if (!box) return;
+  var NS = 'http://www.w3.org/2000/svg';
+  var rot = document.getElementById('wheelRot'), wedgesG = document.getElementById('wedges'), labelsG = document.getElementById('wedgeLabels'), pegsG = document.getElementById('pegs'), cur = document.getElementById('wheelCur');
+  var hubStop = document.getElementById('hubStop'), res = document.getElementById('wheelResult'), pointer = document.getElementById('pointer');
+  var WEDGES = [ {g:'siir',k:'cats.poetry'},{g:'hikaye',k:'cats.stories'},{y:[2021,2022],t:'2021 · 22'},{g:'deneme',k:'cats.essays'},{g:'biyografi',k:'cats.biography'},{y:[2023],t:'2023'},{g:'ceviri',k:'cats.translation'},{g:'sanat',k:'cats.art'},{y:[2024],t:'2024'},{g:'roportaj',k:'cat.interview'},{g:'makale',k:'cat.article'},{y:[2025],t:'2025'} ];
+  var N = WEDGES.length, STEP = 360 / N, CX = 300, CY = 300, R = 254, r = 66;
+  document.getElementById('hubSpiral').setAttribute('d', spiralPath(300, 300, 3.5, 30, 260));
+  function pt(rad, a){ var t = (a - 90) * Math.PI / 180; return (CX + rad * Math.cos(t)).toFixed(1) + ' ' + (CY + rad * Math.sin(t)).toFixed(1); }
+  function build(){
+    var d = I18N[current]; wedgesG.innerHTML = ''; labelsG.innerHTML = ''; pegsG.innerHTML = '';
+    WEDGES.forEach(function(w, i){
+      var s = i * STEP, e = s + STEP;
+      var p = document.createElementNS(NS, 'path');
+      p.setAttribute('d', 'M' + pt(R, s) + ' A' + R + ' ' + R + ' 0 0 1 ' + pt(R, e) + ' L' + pt(r, e) + ' A' + r + ' ' + r + ' 0 0 0 ' + pt(r, s) + ' Z');
+      p.setAttribute('class', 'wedge ' + (i % 2 ? 'b' : 'a') + (w.y ? ' yr' : '')); wedgesG.appendChild(p);
+      var t = document.createElementNS(NS, 'text'); t.setAttribute('x', CX); t.setAttribute('y', CY - R + 36); t.setAttribute('text-anchor', 'middle');
+      t.setAttribute('transform', 'rotate(' + (s + STEP / 2) + ' ' + CX + ' ' + CY + ')'); t.setAttribute('class', 'wlabel' + (w.y ? ' yr' : ''));
+      t.textContent = w.y ? w.t : get(d, w.k); labelsG.appendChild(t);
+      var c = document.createElementNS(NS, 'circle'); var xy = pt(270, s).split(' '); c.setAttribute('cx', xy[0]); c.setAttribute('cy', xy[1]); c.setAttribute('r', 4.5); pegsG.appendChild(c);
+    });
+  }
+  var GMAP = { siir:'poetry', hikaye:'story', deneme:'essay', makale:'article', biyografi:'biography', ceviri:'translation', fotograf:'photo', roportaj:'interview', editorden:'editorial' };
+  var pieces = null, loading = null, pick = null, today = null;
+  function label(p){ var d = I18N[current]; var k = GMAP[p.g]; if (k && d.cat[k]) return d.cat[k]; if (/sanat|ebru|kaligrafi|resim|tezhip|gorsel/.test(p.g)) return d.cats.art; return p.gn; }
+  function meta(p){ var d = I18N[current]; var m = +p.d.slice(5,7); return p.a + ' · ' + label(p) + ' · ' + d.issue.no + ' ' + p.n + ' · ' + d.months[m-1] + ' ' + p.d.slice(0,4); }
+  function load(){ if (!loading) loading = fetch('/data/pieces.json').then(function(x){ return x.json(); }).then(function(d){ pieces = d; renderToday(); return d; }); return loading; }
+  function renderToday(){ if (!pieces) return; var poems = pieces.filter(function(p){ return p.g === 'siir'; }); var day = Math.floor(Date.now() / 864e5); today = poems[(day * 7919) % poems.length]; document.getElementById('todayTitle').textContent = today.t; document.getElementById('todayMeta').textContent = meta(today); document.getElementById('todayLink').href = today.u; document.getElementById('today').hidden = false; }
+  function randomTitle(){ return pieces[Math.floor(Math.random() * pieces.length)].t; }
+  function candidates(w){ if (w.y) return pieces.filter(function(p){ return w.y.indexOf(+p.d.slice(0,4)) >= 0; }); if (w.g === 'ceviri') return pieces.filter(function(p){ return p.tr || p.g === 'ceviri'; }); if (w.g === 'sanat') return pieces.filter(function(p){ return /sanat|ebru|kaligrafi|resim|tezhip|gorsel|fotograf/.test(p.g); }); return pieces.filter(function(p){ return p.g === w.g; }); }
+  function buildHandle(){}
+  window.__renderWheel = function(){ build(); buildHandle(); if (mode === 'idle' && !pick) cur.textContent = I18N[current].wheel.hint; if (today) document.getElementById('todayMeta').textContent = meta(today); if (pick) document.getElementById('resMeta').textContent = meta(pick); };
+  if ('IntersectionObserver' in window){ new IntersectionObserver(function(e, o){ if (e[0].isIntersecting){ load(); o.disconnect(); } }, { rootMargin: '600px' }).observe(box); } else load();
+
+  /* motion: idle drift, drag, free spin (slow decay) until the hub button is pressed */
+  var angle = 0, mode = 'idle', t0 = 0, a0 = 0, aEnd = 0, dur = 0, lastTick = 0, gap = 70, lastWedge = -1, autoTimer = null;
+  function wedgeAt(a){ var top = (360 - (a % 360) + 360) % 360; return Math.floor(top / STEP) % N; }
+  function setAngle(a){ angle = a; rot.setAttribute('transform', 'rotate(' + (((a % 360) + 360) % 360) + ' 300 300)'); var idx = wedgeAt(a); if (idx !== lastWedge){ lastWedge = idx; pointer.classList.remove('tap'); void pointer.getBBox(); pointer.classList.add('tap'); } }
+  function frame(t){
+    if (mode === 'spin'){ var k = Math.min(1, (t - t0) / dur); var e = 1 - Math.pow(1 - k, 3); setAngle(a0 + (aEnd - a0) * e); if (pieces && t - lastTick > gap){ lastTick = t; gap = Math.min(800, 70 + 900 * k * k); cur.textContent = randomTitle(); } if (k >= 1){ mode = 'idle'; reveal(); } }
+    else if (mode === 'idle'){ setAngle(angle + 0.02); }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+  function launch(omega){ /* omega: degrees per second; keeps turning slowly for up to ~16 s, the hub button stops it */
+    var T = 16; var dist = Math.abs(omega) * T / 3; if (dist < 900) dist = 900 + Math.random() * 360;
+    a0 = angle; aEnd = angle + (omega < 0 ? -dist : dist); dur = T * 1000; t0 = performance.now(); mode = 'spin'; gap = 70; lastTick = 0;
+    box.classList.add('spinning', 'free'); res.classList.remove('show');
+    clearTimeout(autoTimer); autoTimer = setTimeout(function(){ if (mode === 'spin') brake(); }, 11000);
+  }
+  function brake(){ if (mode !== 'spin') return; var t = performance.now(); var k = Math.min(1, (t - t0) / dur); var v = 3 * (aEnd - a0) * Math.pow(1 - k, 2) / dur; var T = 2200; a0 = angle; aEnd = angle + v * T / 3; dur = T; t0 = t; box.classList.remove('free'); clearTimeout(autoTimer); }
+  function reveal(){
+    box.classList.remove('spinning', 'free'); var j = wedgeAt(angle); var list = pieces ? candidates(WEDGES[j]) : []; if (!list.length) list = pieces || [];
+    if (!list.length) return;
+    pick = list[Math.floor(Math.random() * list.length)];
+    cur.textContent = pick.t; document.getElementById('resTitle').textContent = pick.t; document.getElementById('resMeta').textContent = meta(pick); document.getElementById('resLink').href = pick.u; res.classList.add('show');
+  }
+  hubStop.addEventListener('click', function(ev){ ev.stopPropagation(); brake(); });
+  hubStop.addEventListener('pointerdown', function(ev){ ev.stopPropagation(); });
+
+  /* hand spin: grab the handle or the wheel, drag in any direction, let go */
+  var drag = null;
+  function pAngle(ev){ var b = box.getBoundingClientRect(); return Math.atan2(ev.clientY - (b.top + b.height / 2), ev.clientX - (b.left + b.width / 2)) * 180 / Math.PI; }
+  var handle = document.getElementById('grabArea');
+  handle.addEventListener('pointerdown', function(ev){ if (ev.button || mode !== 'idle') return; ev.preventDefault(); ev.stopPropagation(); load(); try{ handle.setPointerCapture(ev.pointerId); }catch(e){} mode = 'drag'; box.classList.add('dragging', 'spinning'); box.classList.remove('free'); res.classList.remove('show'); drag = { last: pAngle(ev), samples: [[performance.now(), angle]] }; });
+  handle.addEventListener('pointermove', function(ev){ if (mode !== 'drag' || !drag) return; var a = pAngle(ev), d = a - drag.last; if (d > 180) d -= 360; if (d < -180) d += 360; drag.last = a; setAngle(angle + d); var now = performance.now(); drag.samples.push([now, angle]); while (drag.samples.length > 2 && now - drag.samples[0][0] > 140) drag.samples.shift(); if (pieces && now - lastTick > 90 && Math.abs(d) > .5){ lastTick = now; cur.textContent = randomTitle(); } });
+  function endDrag(){ if (mode !== 'drag') return; box.classList.remove('dragging'); var s = drag.samples, omega = 0; if (s.length > 1){ var dt = (s[s.length - 1][0] - s[0][0]) / 1000; if (dt > 0.016) omega = (s[s.length - 1][1] - s[0][1]) / dt; } drag = null; omega = Math.max(-2400, Math.min(2400, omega)); if (Math.abs(omega) > 90){ mode = 'spin'; dur = 1e9; t0 = performance.now(); a0 = aEnd = angle; load().then(function(){ launch(omega); }); } else { mode = 'idle'; box.classList.remove('spinning', 'free'); } }
+  handle.addEventListener('pointerup', endDrag); handle.addEventListener('pointercancel', endDrag); handle.addEventListener('lostpointercapture', endDrag);
+  box.addEventListener('touchstart', function(ev){ if (ev.target && ev.target.closest && ev.target.closest('#grabArea')) ev.preventDefault(); }, { passive: false });
+  box.addEventListener('touchmove', function(ev){ if (mode === 'drag') ev.preventDefault(); }, { passive: false });
+  build(); buildHandle(); cur.textContent = I18N[current].wheel.hint;
+})();
+
+/* ---------- Genre strip flow ---------- */
+(function(){
+  var flow = document.getElementById('stripFlow'); if (!flow) return;
+  var strip = flow.closest('.strip');
+  if (reduced){ flow.classList.add('still'); return; }
+  var items = Array.prototype.slice.call(flow.children);
+  items.forEach(function(a){ var c = a.cloneNode(true); c.setAttribute('aria-hidden', 'true'); c.tabIndex = -1; c.classList.remove('reveal'); flow.appendChild(c); });
+  function speed(){ var half = flow.scrollWidth / 2; flow.style.animationDuration = Math.max(30, half / 34) + 's'; }
+  speed(); window.addEventListener('resize', speed);
+  var t; strip.addEventListener('touchstart', function(){ strip.classList.add('paused'); clearTimeout(t); }, { passive: true });
+  strip.addEventListener('touchend', function(){ clearTimeout(t); t = setTimeout(function(){ strip.classList.remove('paused'); }, 2500); }, { passive: true });
+})();
+
+/* ---------- Categories hover images ---------- */
+(function(){
+  const imgs = document.querySelectorAll('#catsBg img'), list = document.getElementById('catList');
+  function show(cat){ imgs.forEach(i => i.classList.toggle('on', i.dataset.cat === cat)); list.querySelectorAll('li').forEach(li => li.classList.toggle('dim', cat && li.querySelector('a').dataset.cat !== cat)); }
+  list.querySelectorAll('a').forEach(a => { a.addEventListener('mouseenter', () => show(a.dataset.cat)); a.addEventListener('focus', () => show(a.dataset.cat)); });
+  list.addEventListener('mouseleave', () => show(null));
+})();
+
+/* ---------- Authors: tap to open on touch ---------- */
+document.getElementById('authorsGrid').addEventListener('click', e => {
+  const f = e.target.closest('.author'); if (!f || e.target.closest('a')) return;
+  if (window.matchMedia('(hover:none)').matches){ const was = f.classList.contains('open'); document.querySelectorAll('.author.open').forEach(o => o.classList.remove('open')); if (!was) f.classList.add('open'); }
+});
+
+/* ---------- Archive: drag to scroll + year filter ---------- */
+(function(){
+  const box = document.getElementById('covers');
+  let down = false, startX = 0, startL = 0, moved = false;
+  box.addEventListener('pointerdown', e => { down = true; moved = false; startX = e.clientX; startL = box.scrollLeft; box.classList.add('dragging'); });
+  window.addEventListener('pointermove', e => { if (!down) return; const dx = e.clientX - startX; if (Math.abs(dx) > 4) moved = true; box.scrollLeft = startL - dx; });
+  window.addEventListener('pointerup', () => { down = false; box.classList.remove('dragging'); });
+  box.addEventListener('click', e => { if (moved) { e.preventDefault(); e.stopPropagation(); } }, true);
+  document.getElementById('years').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    document.querySelectorAll('#years button').forEach(x => x.classList.toggle('active', x === b));
+    const y = b.dataset.year, covers = box.querySelectorAll('.cover');
+    covers.forEach(c => c.classList.toggle('dim', y !== 'all' && c.dataset.year !== y));
+    const first = [...covers].find(c => y === 'all' || c.dataset.year === y);
+    if (first) box.scrollTo({ left: first.offsetLeft - parseFloat(getComputedStyle(box).paddingLeft), behavior: 'smooth' });
+  });
+})();
+
+/* ---------- Newsletter ---------- */
+document.getElementById('newsForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const d = I18N[current], input = document.getElementById('email'), msg = document.getElementById('newsMsg');
+  const ok = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(input.value.trim());
+  msg.className = 'msg ' + (ok ? 'ok' : 'err'); msg.textContent = ok ? d.news.ok : d.news.err;
+  if (ok){ try{ const list = JSON.parse(localStorage.getItem('helezon-subs') || '[]'); list.push({ e: input.value.trim(), t: Date.now(), l: current }); localStorage.setItem('helezon-subs', JSON.stringify(list)); }catch(_){} input.value = ''; }
+});
+</script>
+</body>
+</html>

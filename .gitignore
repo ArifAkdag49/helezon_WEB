@@ -1,0 +1,16 @@
+# Vercel project link (machine-specific)
+.vercel/
+
+# Raw WordPress export (80 MB, regenerable from helezondergisi.com API)
+_build/raw/
+
+# Build logs and temp files
+_build/*.log
+_build/deploy.log
+_build/edgeprof/
+_build/chromeprof/
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
+Thumbs.db
