@@ -1,0 +1,18 @@
+const fs=require("fs");let h=fs.readFileSync("index.html","utf8");const before=h.length;
+h=h.replace(/(\{n:(\d+),y:\d+,m:\d+,img:"[^"]+",url:)"[^"]+"\}/g,(m,pre,n)=>pre+'"/sayi/'+n+'/"}');
+h=h.replace('<a class="cover" data-year="${c.y}" href="${c.url}" target="_blank" rel="noopener"','<a class="cover" data-year="${c.y}" href="${c.url}"');
+["edebiyat","siir","hikaye","deneme","biyografi","ceviri","sanat"].forEach(s=>{h=h.split('href="https://helezondergisi.com/category/'+s+'/" target="_blank" rel="noopener"').join('href="/tur/'+s+'/"')});
+h=h.replace('href="https://helezondergisi.com/kendi-cumleleriyle-var-olan-bir-oykucu-tomris-uyar-hizir-ilyasoglu/" target="_blank" rel="noopener" data-i18n="featured.cta"','href="/yazi/kendi-cumleleriyle-var-olan-bir-oykucu-tomris-uyar-hizir-ilyasoglu/" data-i18n="featured.cta"');
+h=h.replace('href="https://helezondergisi.com/istanbul-beni-de-hatirla-zeynep-hafsa-dayi/" target="_blank" rel="noopener"','href="/yazi/istanbul-beni-de-hatirla-zeynep-hafsa-dayi/"');
+h=h.replace('href="https://helezondergisi.com/yazarlar/" target="_blank" rel="noopener" data-i18n="authors.all"','href="/yazarlar/" data-i18n="authors.all"');
+h=h.replace('href="https://helezondergisi.com/gecmis-sayilarimiz/" target="_blank" rel="noopener" data-i18n="archive.allIssues"','href="/arsiv/" data-i18n="archive.allIssues"');
+h=h.replace('<a href="#categories" data-i18n="nav.literature">Literature</a>','<a href="/yazilar/" data-i18n="nav.literature">Literature</a>');
+h=h.replace('<a href="#issue" data-i18n="nav.stories">Stories</a>','<a href="/tur/hikaye/" data-i18n="nav.stories">Stories</a>');
+h=h.replace('<a href="#issue" data-i18n="nav.essays">Essays</a>','<a href="/tur/deneme/" data-i18n="nav.essays">Essays</a>');
+h=h.replace('<a href="#categories" data-i18n="nav.art">Art</a>','<a href="/tur/sanat/" data-i18n="nav.art">Art</a>');
+h=h.replace('<a href="#categories" data-i18n="nav.translation">Translation</a>','<a href="/tur/ceviri/" data-i18n="nav.translation">Translation</a>');
+h=h.replace('<li><a href="#categories" data-i18n="nav.literature">Literature</a></li>','<li><a href="/yazilar/" data-i18n="nav.literature">Literature</a></li>');
+const add={tr:["59. sayının tamamı","Tüm yazılar · 2021'den beri"],en:["The full issue 59","All pieces · since 2021"],de:["Die ganze Ausgabe 59","Alle Texte · seit 2021"],fr:["Le numéro 59 en entier","Tous les textes · depuis 2021"],ar:["العدد 59 كاملًا","كل النصوص · منذ 2021"],es:["El número 59 completo","Todos los textos · desde 2021"],ru:["Весь номер 59","Все тексты · с 2021 года"]};
+Object.entries(add).forEach(([l,[a,b]])=>{const re=new RegExp("(\n"+l+":\{[\s\S]*?\n issue:\{[^}]*?)\}");if(!re.test(h))console.log("NO MATCH",l);h=h.replace(re,(m,pre)=>pre+',fullIssue:"'+a+'",allPieces:"'+b+'"}')});
+fs.writeFileSync("index.html",h);
+console.log("index.html",before,"->",h.length,"| external content links left:",(h.match(/helezondergisi\.com\/(?!wp-content|category|$|")/g)||[]).length);
