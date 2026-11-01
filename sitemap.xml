@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://helezon.vercel.app/</loc></url>
+<url><loc>https://helezon.vercel.app/yazi/yazmak-ya-da-yazmamak/</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://helezon.vercel.app/yazi/wehmut/</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://helezon.vercel.app/yazi/tutustukca/</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://helezon.vercel.app/yazi/cesmeci-parkinda-parcul-cismigiu-bir-guz-gunu/</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://helezon.vercel.app/yazi/anne/</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://helezon.vercel.app/yazi/hayirli-seyirler/</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://helezon.vercel.app/yazi/baska-degil/</loc><lastmod>2026-11-01</lastmod></url>
 <url><loc>https://helezon.vercel.app/yazi/gel-baba/</loc><lastmod>2026-11-01</lastmod></url>
 <url><loc>https://helezon.vercel.app/yazi/yagmur-ol/</loc><lastmod>2026-11-01</lastmod></url>
 <url><loc>https://helezon.vercel.app/yazi/ogretmenler-gunu/</loc><lastmod>2026-11-01</lastmod></url>
@@ -973,13 +980,13 @@
 <url><loc>https://helezon.vercel.app/tur/siir/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/sanat/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/gorsel-sanatlar/</loc></url>
-<url><loc>https://helezon.vercel.app/tur/hikaye/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/deneme/</loc></url>
+<url><loc>https://helezon.vercel.app/tur/hikaye/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/ceviri/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/biyografi/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/makale/</loc></url>
-<url><loc>https://helezon.vercel.app/tur/hatira/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/gezi/</loc></url>
+<url><loc>https://helezon.vercel.app/tur/hatira/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/editorden/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/ebru/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/kaligrafi/</loc></url>
