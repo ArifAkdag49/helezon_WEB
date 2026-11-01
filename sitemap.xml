@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://helezon.vercel.app/</loc></url>
+<url><loc>https://helezon.vercel.app/yazi/gel-baba/</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://helezon.vercel.app/yazi/yagmur-ol/</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://helezon.vercel.app/yazi/ogretmenler-gunu/</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://helezon.vercel.app/yazi/dugum/</loc><lastmod>2026-11-01</lastmod></url>
+<url><loc>https://helezon.vercel.app/yazi/helezon/</loc><lastmod>2026-11-01</lastmod></url>
 <url><loc>https://helezon.vercel.app/yazi/bir-isik-kralin-ruhunu-sarar-ibrahim-turkhan/</loc><lastmod>2026-10-01</lastmod></url>
 <url><loc>https://helezon.vercel.app/yazi/ayse-ihsan-raif-gozyaslarinin-ardindaki-sair-seher-saglam/</loc><lastmod>2026-10-01</lastmod></url>
 <url><loc>https://helezon.vercel.app/yazi/sevdan-yara-olmasin-elif-nur/</loc><lastmod>2026-10-01</lastmod></url>
@@ -977,8 +982,8 @@
 <url><loc>https://helezon.vercel.app/tur/gezi/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/editorden/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/ebru/</loc></url>
-<url><loc>https://helezon.vercel.app/tur/roportaj/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/kaligrafi/</loc></url>
+<url><loc>https://helezon.vercel.app/tur/roportaj/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/fotograf/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/mektup/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/kaligrafi-gorsel-sanatlar/</loc></url>
@@ -987,6 +992,7 @@
 <url><loc>https://helezon.vercel.app/tur/resim/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/tezhip/</loc></url>
 <url><loc>https://helezon.vercel.app/tur/muzik/</loc></url>
+<url><loc>https://helezon.vercel.app/sayi/61/</loc></url>
 <url><loc>https://helezon.vercel.app/sayi/60/</loc></url>
 <url><loc>https://helezon.vercel.app/sayi/59/</loc></url>
 <url><loc>https://helezon.vercel.app/sayi/58/</loc></url>
